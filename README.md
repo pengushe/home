@@ -8,9 +8,8 @@
 ![home 文档](https://github.com/pengushe/home/blob/main/image/home%20page---package.png) 
 ### b. <code>"scripts": { "deploy": "gh-pages -d dist"}, </code> 注明 将来deploy 的代码将会从本地文档里disk 里截取 
 ![dist 文档](https://github.com/pengushe/home/blob/main/image/disk%20folder.png) 
-## 5 新建立一个 disk 文档
-## 6 在disk 文档里添加index.html
-## 7 在终端添加此代码 <code>npm run deploy</code>
-## 8 在gp-pages 里查看添加的代码
+## 5 在disk 文档里添加更改后的index.html
+## 6 在终端添加此代码 <code>npm run deploy</code>
+## 7 在gp-pages 里查看添加的代码
 ![查看 文档](![dist 文档](https://github.com/pengushe/home/blob/main/image/ph-pages.png) 
 ## 请登陆 https://pengushe.github.io/home/
