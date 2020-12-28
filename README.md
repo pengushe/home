@@ -1,5 +1,5 @@
 # 使用说明
-## 1. 复制 github 代码 ### <code> git clone https://github.com/pengushe/home.git </code> ### 
+## 1. 复制 github 代码 <code> git clone https://github.com/pengushe/home.git </code>  
 
 ## 3. 添加 .gitignore 文档 （如果有就不用重复添加）文档内可以添加 node_modules
 
