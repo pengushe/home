@@ -1,7 +1,12 @@
 # 使用说明
-##1. 复制 github 代码 `git clone https://github.com/pengushe/home.git` 
+## 1. 复制 github 代码 `git clone https://github.com/pengushe/home.git` 
 
-##3. 添加 .gitignore 文档 （如果有就不用重复添加）文档内可以写 node_modules
+## 3. 添加 .gitignore 文档 （如果有就不用重复添加）文档内可以添加 node_modules
 
-##4. 更改 package.json 里的内容 
-### 1.
+## 4. 更改 package.json 里的内容 
+### 1.  改成为 "homepage": "https://pengushe.github.io/home",
+### 2. "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+### 3. 确认 dependencies 里边有 gh-pages
+## 5 建立一个 disk 文档
