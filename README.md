@@ -8,3 +8,4 @@
 ### b. <code>"scripts": { "deploy": "gh-pages -d dist"}, </code>
 ### c 确认 dependencies 里边有 gh-pages
 ## 5 建立一个 disk 文档
+## 请登陆 https://pengushe.github.io/home/
