@@ -11,5 +11,5 @@
 ## 5 在disk 文档里添加更改后的index.html
 ## 6 在终端添加此代码 <code>npm run deploy</code>
 ## 7 在gp-pages 里查看添加的代码
-![查看 文档](![dist 文档](https://github.com/pengushe/home/blob/main/image/ph-pages.png) 
+![查看 文档](https://github.com/pengushe/home/blob/main/image/ph-pages.png) 
 ## 请登陆 https://pengushe.github.io/home/
