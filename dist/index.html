@@ -1,35 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-  <title>欢迎来到鹏U社</title>
-  <style>
-    .small_image {
-      width: 200px;
-      height: 200px;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>欢迎界面</h1>
-  <a class="btn btn-primary btn-sm" href="/home">home</a>
-  <a class="btn btn-primary btn-sm" href="./about">about</a>
-
-  <!--bannner 图像代码 -->
-  <img src="../image/banner_image.png" class="img-fluid" alt="banner image">
-  <!-- 作品展示 -->
-  <div class='container'>
-    <img src="../image/作品1.jpg" class="small_image rounded float-start" alt="作品1">
-    <img src="../image/作品2.jpg" class="small_image rounded float-end" alt="作品2">
-    <img src="../image/作品1.jpg" class="small_image rounded float-start" alt="作品1">
-    <img src="../image/作品2.jpg" class="small_image rounded float-end" alt="作品2">
-  </div>
-  </div>
-</body>
-
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="keywords" content="鹏U设工作室，logo设计,平面设计、电商设计、影楼设计、网页设计、影视后期">
+		<meta name="description" content="鹏U设工作室-鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。">
+		<title>鹏U设工作室</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- nav start -->
+		<div class="nav-container">
+			<div class="container">
+				<div class="fl">
+					<a href=""><img src="img/logo.png" alt=""></a>
+				</div>
+				<ul class="fr">
+					<li><a href="#about">关于我们</a></li>
+					<li><a href="#works">作品展示</a></li>
+					<li><a href="#service">服务优势</a></li>
+					<li><a href="#team">设计团队</a></li>
+					<li><a href="#idea">团队理念</a></li>
+				</ul>
+				<div class="nav-xl">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!-- nav end -->
+		
+		<!-- banner start -->
+		<div class="banner"></div>
+		<!-- banner end -->
+		<!-- 我们是谁 start -->
+		<div class="us-container contain1" id="about">
+			<div class="container">
+				<div class="fl col-md-6">
+					<h2>WHO ARE WE?<br>我们是谁？</h2>
+				</div>
+				<div class="fl col-md-6">
+					<p>一群喜欢设计的年轻人，<br>对新鲜事物有着美好的憧憬和探索。</p>
+				</div>
+				<span></span>
+			</div>
+		</div>
+		<!-- 我们是谁 end -->
+		<!-- 我们能做什么 start -->
+		<div class="do-container contain2">
+			<div class="container">
+				<div class="do-title">
+					<h2>我们能做什么？</h2>
+					<p>DO?</p>
+				</div>
+				<div class="do-box fr clearfix">
+					<div class="fl list">
+						<span>LOGO设计</span>
+					</div>
+					<div class="fl list">
+						<span>名片</span>
+					</div>
+					<div class="fl list">
+						<span>宣传单</span>
+					</div>
+					<div class="fl list">
+						<span>产品包装</span>
+					</div>
+					<div class="fl list">
+						<span>期刊设计</span>
+					</div>
+					<div class="fl list">
+						<span>网页设计</span>
+					</div>
+					<div class="fl list">
+						<span>电商设计</span>
+					</div>
+					<div class="fl list">
+						<span>影楼后期</span>
+					</div>
+					<div class="fl list">
+						<span>影视后期</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 我们能做什么 end -->
+		<!-- 作品展示 start -->
+		<div class="works-container contain3" id="works">
+			<div class="container">
+				<div class="title-wrap">
+					<h2>作品展示</h2>
+					<p>Exhibition of works</p>
+				</div>
+				<ul class="works-nav">
+					<li class="current">LOGO设计</li>
+					<li class="">名片</li>
+					<li class="">宣传单</li>
+					<li class="">产品包装</li>
+					<li class="">期刊设计</li>
+					<li class="">网页设计</li>
+					<li class="">电商设计</li>
+					<li class="">影楼设计</li>
+					<li class="">影视后期</li>
+				</ul>
+				<div class="works-img clearfix" id="logo">
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+					<div class="col-md-3 col-xs-6 works-list">
+						<div class="img-box"><img src="img/work-img1.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(".works-nav li").click(function(){
+			var x = $(this).index();
+			$(this).addClass("current").siblings("li").removeClass("current");
+			$(".works-container .works-img").fadeOut();
+			$(".works-container .works-img").eq(x).fadeIn();
+		});
+		</script>
+		<!-- 作品展示 end -->
+		<!-- 选择我们有什么优势 start -->
+		<div class="other-container contain4" id="service">
+			<div class="container">
+				<div class="choose-content">
+					<h2>选择我们有什么优势？</h2>
+					<div class="choose-wrap clearfix">
+						<div class="choose-list col-md-6 col-xs-6">
+							<div class="icon-box fl">
+								<i class="fa fa-handshake-o"></i>
+							</div>
+							<p class="fl">详细的售前咨询<br>完善的售后保障</p>
+						</div>
+						<div class="choose-list col-md-6 col-xs-6">
+							<div class="icon-box fl">
+								<i class="fa fa-edit"></i>
+							</div>
+							<p class="fl">设计风格别致新颖<br>充满青春活力</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 选择我们有什么优势 end -->
+		<!-- 设计团队 start -->
+		<div class="team-container contain5" id="team">
+			<div class="container">
+				<div class="title-wrap">
+					<h2>设计团队</h2>
+					<p>Design team</p>
+				</div>
+				<div class="designer-wrap">
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer1.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>冬瓜</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer2.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>队长</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer3.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>幽幽清</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer4.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>木易</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer5.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>铁憨憨呀</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer3.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>设计师1</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer3.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>设计师1</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-4 designer-list">
+						<div class="designer-img">
+							<img src="img/designer3.png" alt="">
+						</div>
+						<div class="designer-info">
+							<h2>设计师1</h2>
+							<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 追求精彩是一种态度 start -->
+		<div class="other-container wonder-container contain6" id="idea">
+			<div class="container">
+				<div class="other-content">
+					<h2>追求精彩是一种态度</h2>
+					<div class="wonder-wrap">
+						<h3>设计没有止境，创意在这里迸发。</h3>
+						<p>追求品质，推陈出新。</p>
+						<p>服务至上，满意为止！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 追求精彩是一种态度 end -->
+		<!-- footer start -->
+		<div class="footer-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 row1 clearfix">
+						<h4>鹏U设计工作室</h4>
+						<p>鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。</p>
+						<div class="social-box fl"> 
+							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes" rel="nofollow" target="_blank"> <i class="fa fa-qq"></i> </a> 
+							<a href="" rel="nofollow" target="_blank"><i class="fa fa-weibo"></i></a> 
+							<a id="met-weixin"><i class="fa fa-weixin"></i></a>
+							<div id="met-weixin-content" class="hide">
+								<div class="met-weixin-img"><img src="img/qr-img.jpg"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 row2">
+						<h4>联系方式</h4>
+						<div class="contact-list">
+							<p><a href="tel:18236130219"><i class="fa fa-phone"></i><span>18236130219</span></a></p>
+						</div>
+						<div class="contact-list">
+							<p><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes"><i class="fa fa-qq"></i><span>160876044</span></a></p>
+						</div>
+						<div class="contact-list">
+							<p><a href="weixin://"><i class="fa fa-weixin"></i><span>yanyand93</span></a></p>
+						</div>
+						<div class="contact-list">
+							<p><a href="mailto:pendushechina@gmail.com"><i class="fa fa-envelope"></i><span>pendushechina@gmail.com</span></a></p>
+						</div>
+					</div>
+					<div class="col-sm-4 row3">
+						<h4>其它社交</h4>
+						<div class="social-box">
+							<div class="col-md-6 col-xs-6">
+								<img src="img/douyin.jpg" alt="">
+								<p>抖音</p>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<img src="img/kuaishou.jpg" alt="">
+								<p>快手</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<p>Copyright ©鹏U设计工作室</p>
+		</div>
+		<script type="text/javascript">
+			//导航高亮
+			$(".nav-container a").click(function(){
+				// $(this).parents("li").addClass("active");
+				// $(this).parents("li").siblings().removeClass("active");
+				var boo1 = $(this).parents("ul").hasClass("nav-xl-ul");
+				if(boo1){
+					$(".nav-xl-ul").slideUp(300);
+					$(".nav-xl").removeClass("nav-xl-m");
+				}
+				$("body,html").animate({scrollTop:$($(this).attr("href")).offset().top - 80},300);
+			});
+			//导航点击slideup
+			$(".nav-xl").bind("click",function(){
+				isok();
+			});
+			$(window).scroll(function(){
+				pagescroll();
+			});
+			function pagescroll(){
+				var top1=$(".contain1").offset().top - 180;
+				var top2=$(".contain2").offset().top - 180;
+				var top3=$(".contain3").offset().top - 180;
+				var top4=$(".contain4").offset().top - 180;
+				var top5=$(".contain5").offset().top - 180;
+				var top6=$(".contain6").offset().top - 180;
+				//页面滚动
+				$(window).scroll(function(){
+					var s=$(window).scrollTop();
+					s>top1 ? $(".nav-container").addClass("fixed") : $(".nav").removeClass("fixed");
+					if(s>=top1 && s<=top2){
+						$(".nav li").eq(0).addClass("active").siblings().removeClass("active");
+					}
+					else if(s>=top2 && s<top3){
+						$(".nav li").eq(1).addClass("active").siblings().removeClass("active");
+					}
+					else if(s>=top3 && s<top4){
+						$(".nav li").eq(2).addClass("active").siblings().removeClass("active");
+					}
+					else if(s>=top4 && s<top5){
+						$(".nav li").eq(3).addClass("active").siblings().removeClass("active");
+					}
+					else if(s>=top5 && s<top6){
+						$(".nav li").eq(4).addClass("active").siblings().removeClass("active");
+					}
+					else if(s>=top6){
+						$(".nav li").eq(5).addClass("active").siblings().removeClass("active");
+					}
+				});
+			}
+			function isok(){
+				if(true){
+					onOff=false;
+					$(".nav-xl").toggleClass("nav-xl-m");
+					$(".nav-xl-ul").slideToggle(300);
+				}
+				else{
+					onOff=true;
+					$(".nav-xl").toggleClass("nav-xl-m");
+					$(".nav-xl-ul").slideToggle(300);
+				}
+			}
+			ispcmobile();
+			function ispcmobile(){
+				var wid=$(window).width();
+				if(wid>768){
+					$(".nav-container ul").removeClass("nav-xl-ul").show();
+				}
+				else{
+					$(".nav-container ul").addClass("nav-xl-ul").hide();
+					$(".nav-xl").removeClass("nav-xl-m");
+				}
+			}
+			$(window).resize(function(){
+				ispcmobile();
+			});
+			$("#met-weixin").bind("click",function(){
+				$("#met-weixin-content").toggleClass("hide");
+			});
+		</script>
+	</body>
 </html>
