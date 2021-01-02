@@ -81,7 +81,7 @@
 					<span>名片</span>
 				</div>
 				<div class="fl list">
-					<span>宣传单</span>
+					<span>宣传海报</span>
 				</div>
 				<div class="fl list">
 					<span>产品包装</span>
@@ -116,7 +116,7 @@
 				<li class="current">LOGO设计</li>
 				<li class="">网页设计</li>
 				<li class="">名片</li>
-				<li class="">宣传单</li>
+				<li class="">宣传海报</li>
 				<li class="">产品包装</li>
 				<li class="">期刊设计</li>
 				<li class="">电商设计</li>
@@ -183,6 +183,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 网页 -->
 			<div class="works-img clearfix" id="web" hidden>
 				<div class="col-md-3 col-xs-6 works-list">
 					<div class="img-box">
@@ -204,22 +205,45 @@
 					</div>
 				</div>
 			</div>
+			<!-- 名片 -->
 			<div class="works-img clearfix" id="nameCard" hidden>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#popup_name_card">
+							<div class="img-box">
+								<img src="img/designer2.png" alt="">
+							</div>
+						</a>
+						<div class="popup" id="popup_name_card">
+							<div class="popup-inner">
+								<div class="popup__photo">
+									<img src="img/designer2.png" alt="">
+								</div>
+								<div class="popup__text">
+									<p>名片由xxx设计</p>
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+			</div>
+			<!-- 海报 -->
+			<div class="works-img clearfix" id="poster" hidden>
 					<div class="col-md-3 col-xs-6 works-list">
 						<div class="img-box">
 							<!-- modal start -->
-							<a class="button" href="#popup_name_card">
+							<a class="button" href="#popup_poster">
 								<div class="img-box">
-									<img src="img/designer2.png" alt="">
+									<img src="img/poster1.jpg" alt="">
 								</div>
 							</a>
-							<div class="popup" id="popup_name_card">
+							<div class="popup" id="popup_poster">
 								<div class="popup-inner">
-									<div class="popup__photo">
-										<img src="img/designer2.png" alt="">
-									</div>
-									<div class="popup__text">
-										<p>名片由xxx设计</p>
+									<div class="popup__web">
+										<img src="img/poster1.jpg" alt="海报设计">
 									</div>
 									<a class="popup__close" href="#work">X</a>
 								</div>
@@ -228,8 +252,10 @@
 						</div>
 					</div>
 				</div>
+				<!-- 海报 end -->
 		</div>
 	</div>
+
 	<script>
 		$(".works-nav li").click(function () {
 			var x = $(this).index();
