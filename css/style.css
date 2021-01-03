@@ -256,7 +256,7 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	 height: 25%;
 	 overflow: hidden;
 }
-.popup__web {
+.popup__fullSize {
 	display: block;
 	padding: 0 0;
 	width: 100%;

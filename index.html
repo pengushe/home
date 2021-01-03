@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/home.js"></script>
 </head>
 
 <body>
@@ -127,59 +128,20 @@
 				<div class="col-md-3 col-xs-6 works-list">
 					<div class="img-box">
 						<!-- modal start -->
-						<a class="button" href="#popup">
+						<a class="button" href="#logo1">
 							<div class="img-box">
-								<img src="img/work-img1.jpg" alt="">
+								<img src="img/logo_show.png" alt="">
 							</div>
 						</a>
-						<div class="popup" id="popup">
+						<div class="popup" id="logo1">
 							<div class="popup-inner">
-								<div class="popup__photo">
-									<img src="img/logo.png" alt="">
-								</div>
-								<div class="popup__text">
-									<p>这个logo由 平面组设计并制作</p>
+								<div class="popup__fullSize">
+									<img src="img/logo_show.png" alt="">
 								</div>
 								<a class="popup__close" href="#work">X</a>
 							</div>
 						</div>
 						<!-- modal end -->
-					</div>
-
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 works-list">
-					<div class="img-box">
-						<img src="img/work-img1.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -188,15 +150,53 @@
 				<div class="col-md-3 col-xs-6 works-list">
 					<div class="img-box">
 						<!-- modal start -->
-						<a class="button" href="#popup_web">
+						<a class="button" href="#网页1">
 							<div class="img-box">
 								<img src="img/webdesign.jpg" alt="">
 							</div>
 						</a>
-						<div class="popup" id="popup_web">
+						<div class="popup" id="网页1">
 							<div class="popup-inner">
-								<div class="popup__web">
+								<div class="popup__fullSize">
 									<img src="img/webdesign.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#网页2">
+							<div class="img-box">
+								<img src="img/hanhan1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="网页2">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/hanhan1.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#网页3">
+							<div class="img-box">
+								<img src="img/xiaoshuige1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="网页3">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/xiaoshuige1.jpg" alt="">
 								</div>
 								<a class="popup__close" href="#work">X</a>
 							</div>
@@ -206,22 +206,19 @@
 				</div>
 			</div>
 			<!-- 名片 -->
-			<div class="works-img clearfix" id="nameCard" hidden>
+			<div class="works-img clearfix" id="名片" hidden>
 				<div class="col-md-3 col-xs-6 works-list">
 					<div class="img-box">
 						<!-- modal start -->
-						<a class="button" href="#popup_name_card">
+						<a class="button" href="#名片1">
 							<div class="img-box">
-								<img src="img/designer2.png" alt="">
+								<img src="img/youyou1.jpg" alt="">
 							</div>
 						</a>
-						<div class="popup" id="popup_name_card">
+						<div class="popup" id="名片1">
 							<div class="popup-inner">
-								<div class="popup__photo">
-									<img src="img/designer2.png" alt="">
-								</div>
-								<div class="popup__text">
-									<p>名片由xxx设计</p>
+								<div class="popup__fullSize">
+									<img src="img/youyou1.jpg" alt="">
 								</div>
 								<a class="popup__close" href="#work">X</a>
 							</div>
@@ -232,28 +229,321 @@
 			</div>
 			<!-- 海报 -->
 			<div class="works-img clearfix" id="poster" hidden>
-					<div class="col-md-3 col-xs-6 works-list">
-						<div class="img-box">
-							<!-- modal start -->
-							<a class="button" href="#popup_poster">
-								<div class="img-box">
-									<img src="img/poster1.jpg" alt="">
-								</div>
-							</a>
-							<div class="popup" id="popup_poster">
-								<div class="popup-inner">
-									<div class="popup__web">
-										<img src="img/poster1.jpg" alt="海报设计">
-									</div>
-									<a class="popup__close" href="#work">X</a>
-								</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#popup_poster">
+							<div class="img-box">
+								<img src="img/poster1.jpg" alt="">
 							</div>
-							<!-- modal end -->
+						</a>
+						<div class="popup" id="popup_poster">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/poster1.jpg" alt="海报设计">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
 						</div>
+						<!-- modal end -->
 					</div>
 				</div>
-				<!-- 海报 end -->
+			</div>
+			<!-- 海报 end -->
+
+			<!-- 产品包装 -->
+			<div class="works-img clearfix" id="产品包装" hidden>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#产品包装1">
+							<div class="img-box">
+								<img src="img/panpan1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="产品包装1">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/panpan1.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#产品包装3">
+							<div class="img-box">
+								<img src="img/panpan3.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="产品包装3">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/panpan3.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#产品包装2">
+							<div class="img-box">
+								<img src="img/xiaoshuige2.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="产品包装2">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/xiaoshuige2.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+			</div>
+			<!-- 海报 end -->
+			<!-- 期刊设计 -->
+			<div class="works-img clearfix" id="poster" hidden>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<h3>coming soon...</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 期刊 end -->
+			<!-- 电商 start -->
+			<div class="works-img clearfix" id="电商" hidden>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#电商作品1">
+							<div class="img-box">
+								<img src="img/hanhan2.jpg" alt="">
+								<img src="img/hanhan3.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="电商作品1">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/hanhan2.jpg" alt="">
+									<img src="img/hanhan3.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#电商作品2">
+							<div class="img-box">
+								<img src="img/yahanhan1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="电商作品2">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/yahanhan1.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#电商作品3">
+							<div class="img-box">
+								<img src="img/chengzhi2.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="电商作品3">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/chengzhi2.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+			</div>
+			<!-- 电商 end -->
+			<!-- 影楼设计 -->
+			<div class="works-img clearfix" id="影楼设计" hidden>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影楼设计1">
+							<div class="img-box">
+								<img src="img/donggua1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="影楼设计1">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/donggua1.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影楼设计2">
+							<div class="img-box">
+								<img src="img/donggua3.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="影楼设计2">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/donggua3.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影楼设计3">
+							<div class="img-box">
+								<img src="img/xiahei1.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="影楼设计3">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/xiahei1.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影楼设计4">
+							<div class="img-box">
+								<img src="img/yimao2.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="影楼设计4">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/yimao2.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影楼设计5">
+							<div class="img-box">
+								<img src="img/chengzhi4.jpg" alt="">
+							</div>
+						</a>
+						<div class="popup" id="影楼设计4">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<img src="img/chengzhi4.jpg" alt="">
+								</div>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+
+			</div>
+			<!-- 影楼设计 end -->
+			<!-- 影视后期 -->
+			<div class="works-img clearfix" id="影视后期" hidden>
+				<div class="col-md-4 col-xs-4 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影视后期1">
+							影视作品1
+						</a>
+						<div class="popup" id="影视后期1">
+							<div class="popup-inner">
+								<div class="popup__fullSize">
+									<video id="video1" width="100%" height="100%" controls>
+										<source src="video/冬瓜作品1.mp4" type="video/mp4"> Your browser does not support the video tag.
+									</video>
+								</div>
+								<a class="popup__close" href="#work" onclick="pauseVideo()">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影视后期2">
+							影视作品2
+						</a>
+						<div class="popup" id="影视后期2">
+							<div class="popup-inner">
+								<video width="100%" height="100%" controls>
+									<source src="video/木易作品4.mp4" type="video/mp4"> Your browser does not support the video tag.
+								</video>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-4 works-list">
+					<div class="img-box">
+						<!-- modal start -->
+						<a class="button" href="#影视后期3">
+							影视作品3
+						</a>
+						<div class="popup" id="影视后期3">
+							<div class="popup-inner">
+								<video width="100%" height="100%" controls>
+									<source src="video/木易作品5.mp4" type="video/mp4"> Your browser does not support the video tag.
+								</video>
+								<a class="popup__close" href="#work">X</a>
+							</div>
+						</div>
+						<!-- modal end -->
+					</div>
+				</div>
+			</div>
+			<!--  -->
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<script>
@@ -300,7 +590,7 @@
 			<div class="designer-wrap">
 				<div class="col-md-3 col-xs-4 designer-list">
 					<div class="designer-img">
-						<img src="img/designer1.png" alt="">
+						<img src="profile_img/donggua.png" alt="">
 					</div>
 					<div class="designer-info">
 						<h2>冬瓜</h2>
@@ -309,7 +599,7 @@
 				</div>
 				<div class="col-md-3 col-xs-4 designer-list">
 					<div class="designer-img">
-						<img src="img/designer2.png" alt="">
+						<img src="profile_img/duizhang.png" alt="">
 					</div>
 					<div class="designer-info">
 						<h2>队长</h2>
@@ -318,7 +608,7 @@
 				</div>
 				<div class="col-md-3 col-xs-4 designer-list">
 					<div class="designer-img">
-						<img src="img/designer4.png" alt="">
+						<img src="profile_img/youyou.png" alt="">
 					</div>
 					<div class="designer-info">
 						<h2>幽幽清</h2>
@@ -327,7 +617,7 @@
 				</div>
 				<div class="col-md-3 col-xs-4 designer-list">
 					<div class="designer-img">
-						<img src="img/designer3.png" alt="">
+						<img src="profile_img/muyi.png" alt="">
 					</div>
 					<div class="designer-info">
 						<h2>木易</h2>
@@ -336,7 +626,7 @@
 				</div>
 				<div class="col-md-3 col-xs-4 designer-list">
 					<div class="designer-img">
-						<img src="img/designer5.png" alt="">
+						<img src="profile_img/tiehanhan.png" alt="">
 					</div>
 					<div class="designer-info">
 						<h2>铁憨憨呀</h2>
@@ -465,6 +755,11 @@
 	<div class="copy">
 		<p>Copyright ©鹏U设计工作室</p>
 	</div>
+	<script>
+		function pauseVideo() {
+			$("video1").triggle('pause');
+		}
+	</script>
 	<script type="text/javascript">
 		//导航高亮
 		$(".nav-container a").click(function () {
