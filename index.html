@@ -495,7 +495,7 @@
 						<div class="popup" id="影视后期1">
 							<div class="popup-inner">
 								<div class="popup__fullSize">
-									<video id="video1" width="100%" height="100%" controls>
+									<video class="video" controls>
 										<source src="video/冬瓜作品1.mp4" type="video/mp4"> Your browser does not support the video tag.
 									</video>
 								</div>
@@ -513,10 +513,10 @@
 						</a>
 						<div class="popup" id="影视后期2">
 							<div class="popup-inner">
-								<video width="100%" height="100%" controls>
+								<video class="video" controls>
 									<source src="video/木易作品4.mp4" type="video/mp4"> Your browser does not support the video tag.
 								</video>
-								<a class="popup__close" href="#work">X</a>
+								<a class="popup__close" href="#work" onclick="pauseVideo()">X</a>
 							</div>
 						</div>
 						<!-- modal end -->
@@ -530,10 +530,10 @@
 						</a>
 						<div class="popup" id="影视后期3">
 							<div class="popup-inner">
-								<video width="100%" height="100%" controls>
+								<video class="video" controls>
 									<source src="video/木易作品5.mp4" type="video/mp4"> Your browser does not support the video tag.
 								</video>
-								<a class="popup__close" href="#work">X</a>
+								<a class="popup__close" href="#work" onclick="pauseVideo()">X</a>
 							</div>
 						</div>
 						<!-- modal end -->
@@ -553,6 +553,12 @@
 			$(".works-container .works-img").fadeOut();
 			$(".works-container .works-img").eq(x).fadeIn();
 		});
+	</script>
+	<script>
+		function pauseVideo() {
+			var video = $("video")
+			video.each(function(){ this.pause()});
+		}
 	</script>
 	<!-- 作品展示 end -->
 	<!-- 选择我们有什么优势 start -->
@@ -755,11 +761,6 @@
 	<div class="copy">
 		<p>Copyright ©鹏U设计工作室</p>
 	</div>
-	<script>
-		function pauseVideo() {
-			$("video1").triggle('pause');
-		}
-	</script>
 	<script type="text/javascript">
 		//导航高亮
 		$(".nav-container a").click(function () {
