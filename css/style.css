@@ -123,99 +123,6 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 .footer-container .row2 span{margin-left:10px;}
 .footer-container .row3 p{text-align: center;margin-top: 10px;}
 
-/* 底部版权信息 */
-.copy{text-align: center;color:#7e7272;background-color: #282928;line-height: 50px;font-size:14px;}
-.copy p{margin:0;}
-
-
-/*媒体查询*/
-		@media screen and (max-width:1199px){
-			/* 我们能做什么 */
-			.do-container .do-title{margin-left: 160px;}
-			.do-box{margin-right: 110px;}
-		}
-		@media screen and (max-width:991px){
-			/* 我们是谁 */
-			.us-container span{left:0;}
-			/* 我们能做什么 */
-			.do-container .do-title{margin-left: 60px;}
-			.do-box{margin-right: 50px;}
-			/* 选择我们有什么优势 */
-			/* .choose-list .icon-box{width:60px;height:60px;margin-right: 10px;}
-			.choose-list i{line-height: 60px;font-size:24px;}
-			.choose-list p{margin-top:10px;} */
-			/* footer */
-			.footer-container .row2, .footer-container .row3{padding-left: 30px;}
-			.footer-container .row2 span{font-size: 12px;}
-		}
-		@media screen and (max-width:768px){
-			.us-container{padding:30px 0;}
-			.works-container, .team-container, .footer-container{padding:50px 0;}
-			.nav-container ul{display: none;}
-			.nav-xl{display: block;}
-			.nav-container ul.nav-xl-ul,.nav-container ul.nav-xl-ul li{float:none;text-align:center;}
-			.nav-container ul.nav-xl-ul{position:absolute;width:100%;left:0;margin-top:116px;background-color:#339999;padding: 1.5em 0;display: none}
-			.nav-container ul.nav-xl-ul li{padding:0;}
-			.nav-container ul.nav-xl-ul a{line-height: 3em;color:#fff;}
-			.footer-container .row1, .footer-container .row2{margin-bottom:60px;}
-		}
-		@media screen and (max-width:720px){
-			.banner{height:500px;}
-			/* 我们能做什么*/
-			.do-container .do-title{margin-left: 0;position: relative;top:30px;}
-			.do-container .do-title::after{top:30px;}
-			/* .do-box{width:auto;margin-top:40px;} */
-			.do-box{margin-top:-116px;}
-		}
-		@media screen and (max-width:680px){
-			.do-box .list{margin:10px;}
-			.do-box{margin-top:-60px;}
-		}
-		@media screen and (max-width:650px){
-			.do-box{margin-top: 0;position: absolute;right: 30px;top: 110px;margin-right:0;width:354px;}
-			.works-nav li{width:calc(100% / 3 - 15px);}
-		}
-		@media screen and (max-width:610px){
-			.do-box .list{width:90px;height:90px;}
-			.choose-wrap{width:100%;}
-			.choose-list .icon-box{width:60px;height:60px;}
-			.choose-list i{line-height: 60px;font-size: 24px;}
-			.choose-list p{margin-top:10px;font-size: 16px;}
-		}
-		@media screen and (max-width:520px){
-			.us-container .fl h2{font-size:32px;line-height: 40px;}
-			.us-container .fl p{font-size:20px;}
-			.do-box{width:300px;top:140px;}
-			.do-box .list{margin:5px;}
-			.choose-list .icon-box{margin-right:10px;}
-			.choose-list p{font-size:14px;}
-		}
-		@media screen and (max-width:480px){
-			.banner{height:450px;}
-			.do-box{position: static;}
-			.us-container .fl h2{font-size:28px;}
-			.us-container .fl p{font-size:16px;line-height: 32px;}
-			.choose-list .icon-box{width:56px;height:56px;margin:0 auto;}
-			.choose-list .icon-box,.choose-list p{float:none;}
-			.other-container h2{font-size:24px;margin-bottom:30px;}
-			.choose-list p{text-align: center;}
-			.wonder-container h3{font-size:18px;}
-		}
-		@media screen and (max-width:414px){
-			.designer-wrap .designer-list{width:50%;}
-			.us-container .fl{padding-left:80px;}
-			.us-container span{width:60px;height:60px;}
-			.us-container span::before{width:36px;left: calc(50% - 18px);top: 33px;}
-			.us-container span::after{top:28px;}
-		}
-		@media screen and (max-width:375px){
-			.title-wrap h2{font-size:24px;margin-bottom:5px;}
-			.title-wrap h2::before, .title-wrap h2::after{width:56px;}
-			.title-wrap h2::before{left:-70px;}
-			 .title-wrap h2::after{right:-70px;}
-			.title-wrap p{font-size:12px;}
-			.works-nav li{width:calc(50% - 15px);font-size:16px;}
-		}
 		/* video */
 		.video{
 			width: 100%;
@@ -269,8 +176,8 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
  	overflow: auto;
 }
  .popup__photo img {
-	 width: auto;
-	 height: 100%;
+	 width: 100%;
+	 height: auto;
 }
  .popup__text {
 	 display: flex;
@@ -326,4 +233,107 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	 cursor: pointer;
 	 text-decoration: none;
 }
+
+/* 底部版权信息 */
+.copy{text-align: center;color:#7e7272;background-color: #282928;line-height: 50px;font-size:14px;}
+.copy p{margin:0;}
+
+
+/*媒体查询*/
+		@media screen and (max-width:1199px){
+			/* 我们能做什么 */
+			.do-container .do-title{margin-left: 160px;}
+			.do-box{margin-right: 110px;}
+		}
+		@media screen and (max-width:991px){
+			/* 我们是谁 */
+			.us-container span{left:0;}
+			/* 我们能做什么 */
+			.do-container .do-title{margin-left: 60px;}
+			.do-box{margin-right: 50px;}
+			/* 选择我们有什么优势 */
+			/* .choose-list .icon-box{width:60px;height:60px;margin-right: 10px;}
+			.choose-list i{line-height: 60px;font-size:24px;}
+			.choose-list p{margin-top:10px;} */
+			/* footer */
+			.footer-container .row2, .footer-container .row3{padding-left: 30px;}
+			.footer-container .row2 span{font-size: 12px;}
+		}
+		@media screen and (max-width:768px){
+			.us-container{padding:30px 0;}
+			.works-container, .team-container, .footer-container{padding:50px 0;}
+			.nav-container ul{display: none;}
+			.nav-xl{display: block;}
+			.nav-container ul.nav-xl-ul,.nav-container ul.nav-xl-ul li{float:none;text-align:center;}
+			.nav-container ul.nav-xl-ul{position:absolute;width:100%;left:0;margin-top:116px;background-color:#339999;padding: 1.5em 0;display: none}
+			.nav-container ul.nav-xl-ul li{padding:0;}
+			.nav-container ul.nav-xl-ul a{line-height: 3em;color:#fff;}
+			.footer-container .row1, .footer-container .row2{margin-bottom:60px;}
+		}
+		@media screen and (max-width:720px){
+			.banner{height:500px;}
+			/* 我们能做什么*/
+			.do-container .do-title{margin-left: 0;position: relative;top:30px;}
+			.do-container .do-title::after{top:30px;}
+			/* .do-box{width:auto;margin-top:40px;} */
+			.do-box{margin-top:-116px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:680px){
+			.do-box .list{margin:10px;}
+			.do-box{margin-top:-60px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:650px){
+			.do-box{margin-top: 0;position: absolute;right: 30px;top: 110px;margin-right:0;width:354px;}
+			.works-nav li{width:calc(100% / 3 - 15px);}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:610px){
+			.do-box .list{width:90px;height:90px;}
+			.choose-wrap{width:100%;}
+			.choose-list .icon-box{width:60px;height:60px;}
+			.choose-list i{line-height: 60px;font-size: 24px;}
+			.choose-list p{margin-top:10px;font-size: 16px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:520px){
+			.us-container .fl h2{font-size:32px;line-height: 40px;}
+			.us-container .fl p{font-size:20px;}
+			.do-box{width:300px;top:140px;}
+			.do-box .list{margin:5px;}
+			.choose-list .icon-box{margin-right:10px;}
+			.choose-list p{font-size:14px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:480px){
+			.banner{height:450px;}
+			.do-box{position: static;}
+			.us-container .fl h2{font-size:28px;}
+			.us-container .fl p{font-size:16px;line-height: 32px;}
+			.choose-list .icon-box{width:56px;height:56px;margin:0 auto;}
+			.choose-list .icon-box,.choose-list p{float:none;}
+			.other-container h2{font-size:24px;margin-bottom:30px;}
+			.choose-list p{text-align: center;}
+			.wonder-container h3{font-size:18px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:414px){
+			.designer-wrap .designer-list{width:50%;}
+			.us-container .fl{padding-left:80px;}
+			.us-container span{width:60px;height:60px;}
+			.us-container span::before{width:36px;left: calc(50% - 18px);top: 33px;}
+			.us-container span::after{top:28px;}
+			.popup__fullSize{ height: 50%;}
+		}
+		@media screen and (max-width:375px){
+			.title-wrap h2{font-size:24px;margin-bottom:5px;}
+			.title-wrap h2::before, .title-wrap h2::after{width:56px;}
+			.title-wrap h2::before{left:-70px;}
+			 .title-wrap h2::after{right:-70px;}
+			.title-wrap p{font-size:12px;}
+			.works-nav li{width:calc(50% - 15px);font-size:16px;}
+			.popup__fullSize{ height: 50%;}
+		}
+
  
