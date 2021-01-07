@@ -866,10 +866,10 @@
 				var len = $(this).find(".designer-info p").text().length;
 				var onOff = true;
 				var old = "";
-				if(len > 30 && onOff){
+				if(len > 45 && onOff){
 					onOff = false;
 					old = $(this).find(".designer-info p").html();
-					str = $(this).find(".designer-info p").text().substring(0,30) + "....<a>更多</a>";
+					str = $(this).find(".designer-info p").text().substring(0,45) + "....<a>更多</a>";
 					$(this).find(".designer-info p").html(str);
 				}
 				$(this).find(".designer-info p a").click(function(){
