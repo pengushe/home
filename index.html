@@ -634,7 +634,7 @@
 					</div>
 					<div class="designer-info">
 						<h2>铁憨憨呀</h2>
-						<p>设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介设计师简介</p>
+						<p>网页设计负责人，用心为您提供满意的网站页面设计制作服务以及网站建设策划。</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-4 designer-list">
@@ -717,7 +717,7 @@
 					</div>
 					<div class="contact-list">
 						<p>
-							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes">
+							<a href="http://wpa.qq.com/msgrd?v=3&uin=1608776044&site=qq&menu=yes">
 								<i class="fa fa-qq"></i>
 								<span>160876044</span>
 							</a>
@@ -836,8 +836,47 @@
 			ispcmobile();
 		});
 		$("#met-weixin").bind("click", function () {
-			$("#met-weixin-content").toggleClass("hide");
+			$("#met-weixin-content").toggle(80);
 		});
+		
+                $(".popup__fullSize img").click(function(){
+			window.location.href = $(this).attr("src");
+		});
+		$(".works-container .works-img").each(function(){
+			$(this).children(".works-list").each(function(){
+				$(this).find(".popup__fullSize img").each(function(){
+					var img = $(this);
+					var relheight;
+					var relwidth;
+					$("<img/>").attr("src",$(img).attr("src")).load(function(){
+						relwidth = this.width;
+						relheight = this.height;
+						parenheight = $(this).parent().height();
+						if(relheight <= relwidth){
+							$(img).css({"position":"relative","top":"50%","transform":"translateY(-50%)"});
+						}
+					});
+				});
+			});
+		});
+		var wdt = $(window).width();
+		var str = "";
+		if(wdt > 375){
+			$(".designer-wrap .designer-list").each(function(){
+				var len = $(this).find(".designer-info p").text().length;
+				var onOff = true;
+				var old = "";
+				if(len > 30 && onOff){
+					onOff = false;
+					old = $(this).find(".designer-info p").html();
+					str = $(this).find(".designer-info p").text().substring(0,30) + "....<a>更多</a>";
+					$(this).find(".designer-info p").html(str);
+				}
+				$(this).find(".designer-info p a").click(function(){
+					$(this).parent().html(old);
+				});
+			});
+		}
 	</script>
 </body>
 
