@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.4e35b25b.chunk.css",
+    "main.js": "/home/static/js/main.21cf41fc.chunk.js",
+    "main.js.map": "/home/static/js/main.21cf41fc.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.fc663137.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.fc663137.js.map",
+    "static/js/2.0311a5d9.chunk.js": "/home/static/js/2.0311a5d9.chunk.js",
+    "static/js/2.0311a5d9.chunk.js.map": "/home/static/js/2.0311a5d9.chunk.js.map",
+    "index.html": "/home/index.html",
+    "static/css/main.4e35b25b.chunk.css.map": "/home/static/css/main.4e35b25b.chunk.css.map",
+    "static/js/2.0311a5d9.chunk.js.LICENSE.txt": "/home/static/js/2.0311a5d9.chunk.js.LICENSE.txt",
+    "static/media/donggua.0f221990.png": "/home/static/media/donggua.0f221990.png",
+    "static/media/duizhang.491a1a9c.png": "/home/static/media/duizhang.491a1a9c.png",
+    "static/media/muyi.a75099e9.png": "/home/static/media/muyi.a75099e9.png",
+    "static/media/tiehanhan.2146051d.png": "/home/static/media/tiehanhan.2146051d.png",
+    "static/media/xiahei.7aa02da6.jpg": "/home/static/media/xiahei.7aa02da6.jpg",
+    "static/media/xunyou.80a69f29.jpg": "/home/static/media/xunyou.80a69f29.jpg",
+    "static/media/youyou.89e15162.png": "/home/static/media/youyou.89e15162.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc663137.js",
+    "static/js/2.0311a5d9.chunk.js",
+    "static/css/main.4e35b25b.chunk.css",
+    "static/js/main.21cf41fc.chunk.js"
+  ]
+}
