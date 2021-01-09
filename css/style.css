@@ -123,15 +123,11 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 .footer-container .row2 span{margin-left:10px;}
 .footer-container .row3 p{text-align: center;margin-top: 10px;}
 
-/* 底部版权信息 */
-.copy{text-align: center;color:#7e7272;background-color: #282928;line-height: 50px;font-size:14px;}
-.copy p{margin:0;}
-
 		/* video */
-.video{
-	width: 100%;
-	height: 100%;
-}
+		.video{
+			width: 100%;
+			height: 100%;
+		}
 
 		/* modal */
  .popup {
@@ -238,6 +234,11 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	 text-decoration: none;
 }
 
+/* 底部版权信息 */
+.copy{text-align: center;color:#7e7272;background-color: #282928;line-height: 50px;font-size:14px;}
+.copy p{margin:0;}
+
+
 /*媒体查询*/
 		@media screen and (max-width:1199px){
 			/* 我们能做什么 */
@@ -334,5 +335,3 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 			.works-nav li{width:calc(50% - 15px);font-size:16px;}
 			.popup__fullSize{ height: 50%;}
 		}
-
- 
