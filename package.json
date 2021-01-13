@@ -1,0 +1,24 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengushe/home.git"
+  },
+  "keywords": [],
+  "author": "队长",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengushe/home/issues"
+  },
+  "homepage": "https://pengushe.github.io/home",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

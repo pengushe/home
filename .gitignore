@@ -76,7 +76,6 @@ typings/
 .cache
 
 # Next.js build output
-.next
 
 # Gatsby files
 .cache/
