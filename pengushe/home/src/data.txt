@@ -1,0 +1,28 @@
+// just copy this over to index.js
+<Sector id="logo">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="网页" className="invisible">
+<Project id={Image1} imgPath={Image1} imgName={Image1} />
+</Sector>
+<Sector id="名片" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="宣传海报" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="产品包装" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="期刊设计" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="电商设计" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="影楼后期" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector>
+<Sector id="影视后期" className="invisible">
+<Project id="logo1" imgPath={Image1} imgName="logo1" />
+</Sector
