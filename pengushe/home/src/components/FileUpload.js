@@ -1,66 +1,79 @@
-import React from 'react';
-import Dropzone from 'react-dropzone';
-import request from 'superagent';
+import React, { useState } from 'react';
+import Axios from 'axios';
+import '../style/App.css';
+// import useCallback from 'react';
+// import { useDropzone } from 'react-dropzone'
+// import Project from './components/Project';
+// import Sector from './components/Sector'
+// import Image1 from './img/logo.png';
 
-const CLOUDINARY_UPLOAD_PRESET = 'sample';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/pengushe-home/upload';
-
-class FileUpload extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      uploadedFile: null,
-      uploadedFileCloudinaryUrl: ''
-    };
+function FileUpload() {
+  // ready for upload
+  const [imageReady, setImageReady] = useState("");
+  // select the image
+  const [imageSelect, setImageSelected] = useState("");
+  // parameter for uploading to Cloudinary
+  const uploadImage = () => {
+    const formData = new FormData();
+    formData.append("file", imageSelect);
+    formData.append("upload_preset", "ugployuy");
+    Axios.post(
+      'https://api.cloudinary.com/v1_1/pengushe-home/image/upload',
+      formData
+    ).then((response) => { window.alert("你文件已经传送到数据库里：）") });
   }
+  // // select the image in Dropzoon and upload to Cloudinary
+  // const onDrop = useCallback((acceptedFiles) => {
+  //   const formData = new FormData();
+  //   formData.append("file", imageSelect);
+  //   formData.append("upload_preset", "ugployuy");
+  //   Axios.post(
+  //     'https://api.cloudinary.com/v1_1/pengushe-home/image/upload',
+  //     formData
+  //   ).then((response) => { window.alert("你上传的文件已经传送到数据库里！") });
+  // }, [])
+  // const { getRootProps, getInputProps} = useDropzone({
+  //   onDrop,
+  //   accept: "image/*",
+  //   multiple: true,
+  // });
 
-  onImageDrop(files) {
-    this.setState({
-      uploadedFile: files[0]
-    });
-
-    this.handleImageUpload(files[0]);
-  }
-
-  handleImageUpload(file) {
-    let upload = request.post(CLOUDINARY_UPLOAD_URL)
-                     .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
-                     .field('file', file);
-
-    upload.end((err, response) => {
-      if (err) {
-        console.error(err);
-      }
-
-      if (response.body.secure_url !== '') {
-        this.setState({
-          uploadedFileCloudinaryUrl: response.body.secure_url
-        });
-      }
-    });
-  }
-
-  render() {
-    return (
-      <form>
-        <div className="FileUpload">
-          <Dropzone
-            onDrop={this.onImageDrop.bind(this)}
-            multiple={false}
-            accept="image/*">
-            <div>Drop an image or click to select a file to upload.</div>
-          </Dropzone>
+  return (
+    <div>
+      <h1 hidden>文件已经准备好上传，点击上传键</h1>
+      <div className="input-group">
+        <div className="custom-file">
+          <input type="file" className="custom-file-input" id="文件上传"
+            onChange={(event) => {
+              setImageSelected(event.target.files[0]);
+              window.alert("文件已经准备好上传，点击上传键，如果想换一个图片上传，请先刷新界面");
+            }}
+          />
+          <label className="custom-file-label" htmlFor="文件上传">选择文件</label>
         </div>
-
-        <div>
-          {this.state.uploadedFileCloudinaryUrl === '' ? null :
-          <div>
-            <p>{this.state.uploadedFile.name}</p>
-            <img src={this.state.uploadedFileCloudinaryUrl} />
-          </div>}
+        <div className="input-group-append">
+          <button className="btn btn-outline-secondary" type="button"
+            onClick={uploadImage}
+          >点击上传</button>
         </div>
-      </form>
-    )
-  }
+      </div>
+      <div>
+      </div>
+    </div>
+  );
+  {/* <div className="form form-inline">
+    <input type="file" onChange={(event) => {
+      setImageSelected(event.target.files);
+    }} />
+    <button className="btn btn-primary btn-block" onClick={uploadImage}>点击上传</button>
+  </div> */}
+  {/* <div
+    {...getRootProps()}
+    // className={`${styles.dropzone} ${isDragActive ? styles.active : null}`}
+  >
+    <input {...getInputProps()} />
+    <h1>Drop Zone</h1>
+  </div> */}
 }
+
+export default FileUpload;
