@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import { Image, Video, Transformation, CloudinaryContext } from 'cloudinary-react';
 import FileUpload from './components/FileUpload';
+import './style/bootstrap.min.css'
+import './style/font-awesome.min.css'
 
 class App extends React.Component {
   constructor(props) {
