@@ -16,11 +16,12 @@ function FileUpload() {
   const uploadImage = () => {
     const formData = new FormData();
     formData.append("file", imageSelect);
+    formData.append("resource_type", "auto");
     formData.append("upload_preset", "ugployuy");
     Axios.post(
       'https://api.cloudinary.com/v1_1/pengushe-home/image/upload',
       formData
-    ).then((response) => { window.alert("你文件已经传送到数据库里：）") });
+    ).then((response) => { window.alert("你的文件已经传送到数据库里：）") });
   }
   // // select the image in Dropzoon and upload to Cloudinary
   // const onDrop = useCallback((acceptedFiles) => {
@@ -46,7 +47,7 @@ function FileUpload() {
           <input type="file" className="custom-file-input" id="文件上传"
             onChange={(event) => {
               setImageSelected(event.target.files[0]);
-              window.alert("文件已经准备好上传，点击上传键，如果想换一个图片上传，请先刷新界面");
+              window.alert("文件已经准备好上传，点击上传键，如果想换一个图片上传，点击OK，然后请先刷新界面");
             }}
           />
           <label className="custom-file-label" htmlFor="文件上传">选择文件</label>

@@ -28,7 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        {/* 上传文件 */}
         <FileUpload />
+        {/* -end- */}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-default">查看已经上传的图片</span>
