@@ -250,7 +250,7 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	}
 	@media screen and (max-width:992px){
 		/* 我们是谁 */
-		.us-container span{left:0;}
+		.us-container span{left:10px;}
 		/* 我们能做什么 */
 		.do-container .do-title{margin-left: 60px;}
 		.do-box{margin-right: 50px;}
