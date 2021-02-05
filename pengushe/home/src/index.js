@@ -13,7 +13,7 @@ class App extends React.Component {
       publicId: 'sample',
       width: '0.5',
       crop: 'scale',
-      value: '',
+      url: '',
       copied: false,
     };
     this.filterID = this.filterID.bind(this);
@@ -27,29 +27,27 @@ class App extends React.Component {
     this.setState({ width: event.target.value });
     event.preventDefault();
   }
-  setValue(value) {
-    this.setState({ value: value });
+  setValue(url) {
+    this.setState({ url: url });
   }
   render() {
     return (
       <div>
         {/* 上传文件 */}
-        <FileUpload selectValue={
+        <FileUpload URL={
           { setValue: this.setValue.bind(this) }
         } />
         <div>
           <div class="mb-3">
             <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-              value={this.state.value}
-              onChange={({ target: { value } }) => this.setState({ value, copied: false })} readOnly />
-            <CopyToClipboard text={this.state.value}
+              value={this.state.url}
+              onChange={({ target: { url } }) => this.setState({ url, copied: false })} readOnly />
+            <CopyToClipboard text={this.state.url}
               onCopy={() => this.setState({ copied: true })}>
-              <button>复制图片的URL</button>
+              <button>复制URL</button>
             </CopyToClipboard>
+            {this.state.copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
           </div>
-
-
-          {this.state.copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
         </div>
         {/* -end- */}
         <div className="input-group mb-3">
@@ -64,10 +62,9 @@ class App extends React.Component {
 
         </div>
         <CloudinaryContext cloudName={this.state.cloudName}>
-          <Image publicId={this.state.publicId} width={this.state.width} crop="scale" />
+          <Image publicId={this.state.publicId} width={this.state.width} crop="scale" thumbnail />
         </CloudinaryContext>
-        <p> 已经上传的图片
-          youyou1,youyou2,donggua1,test1,test2,test3
+        <p> 上传素材不大于10M 
         </p>
       </div>
     );
