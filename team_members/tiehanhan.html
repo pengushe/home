@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset=utf-8 />
-		<meta name=viewport content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-		<meta name=keywords content=鹏U设工作室，logo设计,平面设计、电商设计、影楼设计、网页设计、影视后期>
-		<meta name=description content=鹏U设工作室-鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。>
-		<title>鹏U设工作室</title>
-		<link rel=stylesheet href=css/bootstrap.min.css> <link rel=stylesheet type=text/css href=css/style.css />
-		<link rel=stylesheet type=text/css href=css/font-awesome.css />
-		<script src=https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js> </script> </head> <body>
-			<div class=nav-container>
+<head>
+	<meta charset=utf-8 />
+	<meta name=viewport content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name=keywords content=鹏U设工作室，logo设计,平面设计、电商设计、影楼设计、网页设计、影视后期>
+	<meta name=description content=鹏U设工作室-鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。>
+	<title>鹏U设工作室</title>
+	<link rel=stylesheet href=css/bootstrap.min.css>
+	<link rel=stylesheet type=text/css href=css/style.css />
+	<link rel=stylesheet type=text/css href=css/font-awesome.css />
+	<script src=https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js> </script> </head>
+
+<body>
+	<div class=nav-container>
 		<div class=container>
 			<ul class=fr>
 				<li>
-					<a href=#about>网站首页</a>
+					<a href=/home>网站首页</a>
 				</li>
 				<li>
 					<a href=#works>成员介绍</a>
@@ -26,11 +29,13 @@
 					<a href=#team>成员作品</a>
 				</li>
 				<li>
-					<a href=#idea>联系方式</a>
+					<a href=#contact>联系方式</a>
 				</li>
 			</ul>
 			<div class="logo">
-				<img src="img/LOGO.jpg" >
+				<a href="/home">
+					<img src="img/LOGO.jpg">
+				</a>
 			</div>
 			<div class=nav-xl>
 				<span></span>
@@ -42,21 +47,23 @@
 	<div class=banner>
 		<div class=zhezhao>
 			<div class=f1>
-			<h1>团队成员</h1>
-			<h2>TEAM MEMBERS</h2>
+				<h1>团队成员</h1>
+				<h2>TEAM MEMBERS</h2>
 			</div>
 		</div>
 	</div>
 	<div class=introduce>
-		<div class=touxiang></div>
-		<div class=text>
+		<div class=touxiang>
+			<img src="https://res.cloudinary.com/pengushe-home/image/upload/v1611590586/designer5_vfk5bo.jpg" alt="铁憨憨">
+		</div>
+		<div id="works" class=text>
 			<h1>设计师名字</h1>
 			<p>设计师介绍</p>
 		</div>
 	</div>
-	
-	<div class=banner2>
-	<!-- 	<div class="zhezhao">
+
+	<div id="service" class=banner2>
+		<!-- 	<div class="zhezhao">
 			<div class=main1>
 				<div class=ps>
 				<p>PS</p>
@@ -75,98 +82,33 @@
 	</div>
 
 	<script>$(".works-nav li").click(function () { var a = $(this).index(); $(this).addClass("current").siblings("li").removeClass("current"); $(".works-container .works-img").fadeOut(); $(".works-container .works-img").eq(a).fadeIn() });</script>
-		<script>function pauseVideo() { var a = $("video"); a.each(function () { this.pause() }) }</script>
-		<div class="team-container contain5" id=team>
-				<div class=title-wrap>
-					<h2>成员作品</h2>
-					<p>Exhibition of works</p>
-				</div>
-				<div class=show>
-					<img src="img/show.jpg" >
-				</div>
+	<script>function pauseVideo() { var a = $("video"); a.each(function () { this.pause() }) }</script>
+	<div class="team-container contain5" id=team>
+		<div class=title-wrap>
+			<h2>成员作品</h2>
+			<p>Exhibition of works</p>
 		</div>
+		<div class=show>
+			<img src="img/show.jpg">
+		</div>
+	</div>
 
-		<div class=contact>
-			<div class=title-wrap>
-				<h2>联系方式</h2>
-				<p></p>Contact
-			</div>
+	<div id="contact" class=contact>
+		<div class=title-wrap>
+			<h2>联系方式</h2>
+			<p></p>Contact
 		</div>
-		<div class=footer-container>
-			<div class=container>
-				<div class=row>
-					<div class="col-sm-4 row1 clearfix">
-						<h4>鹏U设计工作室</h4>
-						<p>鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。</p>
-						<div class="social-box fl">
-							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes" rel=nofollow target=_blank>
-								<i class="fa fa-qq"></i>
-							</a>
-							<a href rel=nofollow target=_blank>
-								<i class="fa fa-weibo"></i>
-							</a>
-							<a id=met-weixin>
-								<i class="fa fa-weixin"></i>
-							</a>
-							<div id=met-weixin-content class=hide>
-								<div class=met-weixin-img>
-									<img loading=lazy src=img/qr-img.jpg> </div> </div> </div> </div> <div class="col-sm-4 row2">
-									<h4>联系方式</h4>
-									<div class=contact-list>
-										<p>
-											<a href=tel:18236130219>
-												<i class="fa fa-phone"></i>
-												<span>18236130219</span>
-											</a>
-										</p>
-									</div>
-									<div class=contact-list>
-										<p>
-											<a href="http://wpa.qq.com/msgrd?v=3&uin=1608776044&site=qq&menu=yes">
-												<i class="fa fa-qq"></i>
-												<span>160876044</span>
-											</a>
-										</p>
-									</div>
-									<div class=contact-list>
-										<p>
-											<a href=weixin://> <i class="fa fa-weixin"></i>
-												<span>yanyand93</span>
-											</a>
-										</p>
-									</div>
-									<div class=contact-list>
-										<p>
-											<a href=mailto:pendushechina@gmail.com>
-												<i class="fa fa-envelope"></i>
-												<span>pendushechina@gmail.com</span>
-											</a>
-										</p>
-									</div>
-								</div>
-								<div class="col-sm-4 row3">
-									<h4>其它社交</h4>
-									<div class=social-box>
-										<div class="col-md-6 col-xs-6">
-											<img loading=lazy src=img/douyin.jpg alt=抖音,短视频社交推广二维码>
-											<p>抖音</p>
-										</div>
-										<div class="col-md-6 col-xs-6">
-											<img loading=lazy src=img/kuaishou.jpg alt=快手,短视频社交推广二维码>
-											<p>快手</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class=copy>
-						<p>Copyright ©鹏U设计工作室</p>
-					</div>
-					<script type=text/javascript>$(".nav-container a").click(function(){var a=$(this).parents("ul").hasClass("nav-xl-ul");if(a){$(".nav-xl-ul").slideUp(300);$(".nav-xl").removeClass("nav-xl-m")}$("body,html").animate({scrollTop:$($(this).attr("href")).offset().top-80},300)});$(".nav-xl").bind("click",function(){isok()});$(window).scroll(function(){pagescroll()});function
+	</div>
+	<script>
+		$(function () {
+			$('#footer').load('../footer.html');
+		})
+	</script>
+	<div id="footer"></div>
+	<script type=text/javascript>$(".nav-container a").click(function(){var a=$(this).parents("ul").hasClass("nav-xl-ul");if(a){$(".nav-xl-ul").slideUp(300);$(".nav-xl").removeClass("nav-xl-m")}$("body,html").animate({scrollTop:$($(this).attr("href")).offset().top-80},300)});$(".nav-xl").bind("click",function(){isok()});$(window).scroll(function(){pagescroll()});function
 					 pagescroll(){var f=$(".contain1").offset().top-180;var e=$(".contain2").offset().top-180;var d=$(".contain3").offset().top-180;var
 					 c=$(".contain4").offset().top-180;var b=$(".contain5").offset().top-180;var a=$(".contain6").offset().top-180;$(window).scroll(function(){var
 					 g=$(window).scrollTop();g>f?$(".nav-container").addClass("fixed"):$(".nav").removeClass("fixed");if(g>=f&&g<=e){$(".nav li").eq(0).addClass("active").siblings().removeClass("active")}else{if(g>=e&&g<d){$(".nav li").eq(1).addClass("active").siblings().removeClass("active")}else{if(g>=d&&g<c){$(".nav li").eq(2).addClass("active").siblings().removeClass("active")}else{if(g>=c&&g<b){$(".nav li").eq(3).addClass("active").siblings().removeClass("active")}else{if(g>=b&&g<a){$(".nav li").eq(4).addClass("active").siblings().removeClass("active")}else{if(g>=a){$(".nav li").eq(5).addClass("active").siblings().removeClass("active")}}}}}}})}function isok(){if(true){onOff=false;$(".nav-xl").toggleClass("nav-xl-m");$(".nav-xl-ul").slideToggle(300)}else{onOff=true;$(".nav-xl").toggleClass("nav-xl-m");$(".nav-xl-ul").slideToggle(300)}}ispcmobile();function ispcmobile(){var a=$(window).width();if(a>768){$(".nav-container ul").removeClass("nav-xl-ul").show()}else{$(".nav-container ul").addClass("nav-xl-ul").hide();$(".nav-xl").removeClass("nav-xl-m")}}$(window).resize(function(){ispcmobile()});$("#met-weixin").bind("click",function(){$("#met-weixin-content").toggle(80)});$(".popup__fullSize img").click(function(){window.location.href=$(this).attr("src")});var wdt=$(window).width();var str="";if(wdt>375){$(".designer-wrap .designer-list").each(function(){var b=$(this).find(".designer-info p").text().length;var a=true;var c="";if(b>45&&a){a=false;c=$(this).find(".designer-info p").html();str=$(this).find(".designer-info p").text().substring(0,45)+"....<a>更多</a>";$(this).find(".designer-info p").html(str)}$(this).find(".designer-info p a").click(function(){$(this).parent().html(c)})})}if(wdt<768){$(".works-container .works-img").each(function(){$(this).children(".works-list").each(function(){$(this).find(".popup__fullSize img").each(function(){var a=$(this);var b;var c;$("<img/>").attr("src",$(a).attr("src")).load(function(){c=this.width;b=this.height;parenheight=$(this).parent().height();if(b<=c){$(a).css({position:"relative",top:"50%",transform:"translateY(-50%)"})}})})})})};</script>
-					</body>
+</body>
 
 </html>
