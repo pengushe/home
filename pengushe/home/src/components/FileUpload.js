@@ -74,12 +74,12 @@ const FileUpload = (props) => {
           <div className="form-check form-check-inline">
             <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
               onChange={changeImgType} />
-            <label className="form-check-label" for="inlineRadio1">上传个人图像</label>
+            <label className="form-check-label" for="inlineRadio1">上传个人头像</label>
           </div>
           <div className="form-check form-check-inline">
             <input className="form-;check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
               onChange={changeImgType} />
-            <label className="form-check-label" for="inlineRadio2">上传个人素材</label>
+            <label className="form-check-label" for="inlineRadio2">上传个人作品</label>
           </div>
         </div>
         <div class="input-group">

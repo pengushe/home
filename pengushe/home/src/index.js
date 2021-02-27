@@ -10,8 +10,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       cloudName: "pengushe-home",
-      publicId: 'sample',
-      width: '0.5',
+      profileImg: 'https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/duizhang.png',
+      publicId: '76a24be5037645dfd6e194431cc7d38c',
+      width: '0.3',
       crop: 'scale',
       url: '',
       copied: false,
@@ -55,17 +56,19 @@ class App extends React.Component {
             <span className="input-group-text" id="inputGroup-sizing-default">查看已经上传的图片</span>
           </div>
           <input type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" onChange={this.filterID} />
-          <div className="input-group-prepend">
+          {/* <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-default">更改大小 0.5(%) 或者 200 px</span>
           </div>
-          <input type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" onChange={this.changWidth} />
+          <input type="text" className="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" onChange={this.changWidth} /> */}
 
         </div>
         <CloudinaryContext cloudName={this.state.cloudName}>
-          <Image publicId={this.state.publicId} width={this.state.width} crop="scale" thumbnail />
+
+          <Image publicId={this.state.profileImg} width="0.5" crop="scale" thumbnail />
+          <p> 个人头像</p>
+          <Image publicId={this.state.publicId} width="300" crop="scale" thumbnail fluid/>
+          <p> 查看个人作品（上传作品不超过10M）</p>
         </CloudinaryContext>
-        <p> 上传素材不大于10M 
-        </p>
       </div>
     );
   }
