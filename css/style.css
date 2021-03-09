@@ -233,7 +233,54 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	 cursor: pointer;
 	 text-decoration: none;
 }
-
+.rounded{
+	/* text-align: center; */
+	padding-left: 5%; 
+	height: auto;
+	width: 20%
+}
+.work {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 170px;
+  width: 100%;
+  display: table;
+	overflow: hidden;
+	text-decoration: none;
+	background-image: url(img/portfolio-1.jpg);
+}
+@media screen and (max-width: 768px) {
+  .work {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work {
+    height: 270px;
+  }
+}
+.work .desc {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.work .desc h3 {
+  font-size: 20px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+}
+.animate-box {
+  opacity: 0;
+}
 /* 底部版权信息 */
 .copy{text-align: center;color:#7e7272;background-color: #282928;line-height: 50px;font-size:14px;}
 .copy p{margin:0;}
