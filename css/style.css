@@ -348,7 +348,7 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	@media screen and (max-width:650px){
 		.do-box{margin-top: 0;position: absolute;right: 30px;top: 110px;margin-right:0;width:354px;}
 		.works-nav li{width:calc(100% / 3 - 15px);}
-		.popup__fullSize{height: 100%;}
+		.popup__fullSize{height: auto;}
 	}
 	@media screen and (max-width:610px){
 		.do-box .list{width:90px;height:90px;}
