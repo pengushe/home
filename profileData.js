@@ -1,5 +1,8 @@
 const imageDisplayURL = 
-// 1. 冬瓜， 2.木易，3木易，4叶子欧，5叶子欧，6叶子欧，7叶子欧 ...
+// 将弄好的 图片链接 复制粘贴到 “” 里
+// 例如
+// 1冬瓜
+// “https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png”
 [
   // 1冬瓜
   "",
