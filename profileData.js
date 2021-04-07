@@ -5,9 +5,9 @@ const imageDisplayURL =
 // “https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png”
 [
   // 1冬瓜
-  "",
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png",
   // 2木易
-  "",
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png",
   // 3木易
   "",
   // 4叶子欧
