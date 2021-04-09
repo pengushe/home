@@ -6,9 +6,6 @@ imageDisplayURL.filter( function(url, index){
   }
 });
 
-
-
-
 // create a object array
 // const propertyValues = Object.values(desingerImg);
 // console.log(propertyValues.map(function (img) {
