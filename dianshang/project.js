@@ -17,6 +17,3 @@ ecommerce.forEach(function (e,i) {
     </div>
   </div>`
 });
-fetch('https://v1.nocodeapi.com/evanapi/google_sheets/qWTHUWXJFlNMRjPPtabId=sheet1')
-  .then(response => response.json())
-  .then(data => console.log(data));
