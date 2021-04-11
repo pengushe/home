@@ -25,7 +25,7 @@ const FileUpload = (props) => {
     formData.append("file", imageSelect);
     formData.append("resource_type", "auto");
     formData.append("upload_preset", upload_preset);
-    Axios.post(
+    await Axios.post(
       'https://api.cloudinary.com/v1_1/pengushe-home/image/upload',
       formData
     ).then(
