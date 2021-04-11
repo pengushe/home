@@ -1,20 +1,25 @@
+// current desinger
 let desingerImg = document.querySelectorAll('.designer-img > img');
 
-imageDisplayURL.filter( function(url, index){
-  if(url){
+imageDisplayURL.filter(function (url, index) {
+  if (url) {
     desingerImg[index].src = url
   }
 });
-
-// create a object array
-// const propertyValues = Object.values(desingerImg);
-// console.log(propertyValues.map(function (img) {
-//   // img.attributes.src.nodeValue;
-//   return img.getAttribute("src");
-// }));
-// propertyValues = propertyValues.map(infor => infor.currentSrc);
-// Array.prototype.splice.apply(propertyValues, [0, imageDisplayURL.length].concat(imageDisplayURL));
-
-
+// add new members
+let addnewMembers = document.getElementById('addnewMembers');
+newMembers.forEach(function (member) {
+  return addnewMembers.innerHTML += 
+  `<div class="col-md-3 col-xs-6 designer-list">
+  <div class=designer-img>
+    <img loading=lazy src= ${member.image}
+     alt=${member.name}>
+  </div>
+  <div class=designer-info>
+    <h2>${member.name}</h2>
+    <p>${member.description}</p>
+  </div>
+</div>`
+});
 
 
