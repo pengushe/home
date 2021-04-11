@@ -29,7 +29,7 @@ const imageDisplayURL =
   // 12橙汁
   "",
   // 13小枫男
-  "", 
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1618114764/profile_img/fengnan_lk4jiy.jpg", 
   // 14风间人
   "",
   // 15叶子欧
