@@ -50,15 +50,10 @@ const imageDisplayURL =
 
 // 增加加新成员
 const newMembers = [
-  //怎加成员1
-  { //姓名 ： 夏黑
-    name: "",
-
-    //介绍 ： 平面设计师带头人，为你提供个性话的服务，为你的企业出谋划策
-    description: "",
-    
-    //头像 ： “https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/xiahei.jpg”
-    image : "",
+  { 
+    // 每次增加新成员 用 {name: "", description: "", image: ""},
+    name: "小帅哥",
+    description: "热爱视频剪辑以及后期，沟通能力强，表达清晰，为客户展现不一样的的视觉冲击。",
+    image : "https://res.cloudinary.com/pengushe-home/image/upload/v1618156403/profile_img/shuaige_nek9a5.jpg",
   },
-  // 每次增加新成员 用 {name: "", description: "", image: ""},
 ]
