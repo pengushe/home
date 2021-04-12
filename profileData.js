@@ -48,7 +48,7 @@ const imageDisplayURL =
   "",
 ];
 
-// 怎加新成员
+// 增加加新成员
 const newMembers = [
   //怎加成员1
   { //姓名 ： 夏黑
