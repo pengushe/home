@@ -56,4 +56,10 @@ const newMembers = [
     description: "热爱视频剪辑以及后期，沟通能力强，表达清晰，为客户展现不一样的的视觉冲击。",
     image : "https://res.cloudinary.com/pengushe-home/image/upload/v1618156403/profile_img/shuaige_nek9a5.jpg",
   },
+  { 
+    // 每次增加新成员 用 {name: "", description: "", image: ""},
+    name: "哆多",
+    description: "。。。",
+    image : "https://res.cloudinary.com/pengushe-home/image/upload/v1618239794/profile_img/duoduo_wzljym.jpg",
+  },
 ]
