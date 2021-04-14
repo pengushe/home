@@ -59,7 +59,7 @@ const newMembers = [
   { 
     // 每次增加新成员 用 {name: "", description: "", image: ""},
     name: "哆多",
-    description: "。。。",
+    description: "平面设计师，热爱设计，善于合成海报，名片，人像精修会一点",
     image : "https://res.cloudinary.com/pengushe-home/image/upload/v1618239794/profile_img/duoduo_wzljym.jpg",
   },
 ]

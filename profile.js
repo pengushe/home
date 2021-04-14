@@ -20,6 +20,5 @@ newMembers.forEach(function (member) {
     <p>${member.description}</p>
   </div>
 </div>`
+console.log(newMembers);
 });
-
-
