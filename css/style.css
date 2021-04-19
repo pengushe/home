@@ -246,7 +246,7 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 170px;
+	height: 270px;
 	width: 100%;
 	display: table;
 	overflow: hidden;
@@ -271,7 +271,8 @@ img{display: block;width:100%;height: auto;max-width: 100%;}
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s;
+	transition: 0.3s;
+	overflow: auto;
 }
 .work .desc h3 {
   font-size: 20px;
