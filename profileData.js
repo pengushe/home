@@ -1,3 +1,4 @@
+
 const imageDisplayURL = 
 // 将弄好的 图片链接 复制粘贴到 “” 里
 // 例如
@@ -41,11 +42,11 @@ const imageDisplayURL =
   // 18雅憨憨
   "https://res.cloudinary.com/pengushe-home/image/upload/v1618117939/profile_img/yahanhan_bbpqlm.jpg",
   // 19略略略
-  "",
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1618118286/profile_img/fengjianren_pf2gch.jpg",
   // 20泡泡
-  "",
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1618117736/profile_img/yeziou_xt0qml.jpg",
   // 21黑桃
-  "",
+  "https://res.cloudinary.com/pengushe-home/image/upload/v1618156403/profile_img/shuaige_nek9a5.jpg",
 ];
 
 // 增加加新成员

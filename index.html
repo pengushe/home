@@ -12,41 +12,41 @@
 	<link rel=stylesheet type=text/css href=css/style.css />
 	<link rel=stylesheet type=text/css href=css/font-awesome.css />
 	<script src=https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?f4e298e524ff88d2ecd04bcfb30f0a4c";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f4e298e524ff88d2ecd04bcfb30f0a4c";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
 
 </head>
-
 <body>
 	<!--百度推送工具代码 start-->
-		<script>
-		(function(){
-		    var bp = document.createElement('script');
-		    var curProtocol = window.location.protocol.split(':')[0];
-		    if (curProtocol === 'https') {
-			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-		    }
-		    else {
-			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-		    }
-		    var s = document.getElementsByTagName("script")[0];
-		    s.parentNode.insertBefore(bp, s);
+	<script>
+		(function () {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
 		})();
-		</script>
+	</script>
 	<!--百度推送工具代码 end-->
 	<div class=nav-container>
 		<div class=container>
 			<div class=fl>
 				<a href=/>
-					<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611590592/logo_ft1vkf.jpg" alt=鹏U设工作室，logo设计、平面设计、电商设计、影楼设计、网页设计、影视后期>
+				<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611590592/logo_ft1vkf.jpg" alt=鹏U设工作室，logo设计、平面设计、电商设计、影楼设计、网页设计、影视后期>
 				</a>
 			</div>
 			<ul class=fr>
@@ -161,6 +161,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addLogo"></div>
 			</div>
 			<!-- 网页 -->
 			<div class="works-img clearfix" id="web" hidden>
@@ -221,6 +222,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addWeb"></div>
 			</div>
 			<!-- 名片 -->
 			<div class="works-img clearfix" id="card" hidden>
@@ -262,6 +264,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addNameCard"></div>
 			</div>
 			<!-- 海报 -->
 			<div class="works-img clearfix" id="海报" hidden>
@@ -350,13 +353,15 @@
 						<!-- modal start -->
 						<a class="button" href="#poster5">
 							<div class="img-box">
-								<img loading="lazy" src="https://res.cloudinary.com/pengushe-home/image/upload/v1617844194/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408090109.jpg" alt="海报设计作品">
+								<img loading="lazy" src="https://res.cloudinary.com/pengushe-home/image/upload/v1617844194/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408090109.jpg"
+								 alt="海报设计作品">
 							</div>
 						</a>
 						<div class="popup" id="poster5">
 							<div class="popup-inner">
 								<div class="popup__fullSize">
-									<img loading="lazy" src="https://res.cloudinary.com/pengushe-home/image/upload/v1617844194/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408090109.jpg" alt="海报设计作品">
+									<img loading="lazy" src="https://res.cloudinary.com/pengushe-home/image/upload/v1617844194/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408090109.jpg"
+									 alt="海报设计作品">
 								</div>
 								<a class="popup__close" href="#work">X</a>
 							</div>
@@ -365,7 +370,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- 产品包装 -->
 			<div class="works-img clearfix" id="pack" hidden>
 				<div class="workList">
@@ -425,6 +430,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addPoster"></div>
 			</div>
 			<!-- 期刊设计 -->
 			<div class="works-img clearfix" id="periodical" hidden>
@@ -447,6 +453,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addImageBox"></div>
 			</div>
 			<!-- 电商  -->
 			<div class="works-img clearfix" id="电商">
@@ -564,7 +571,7 @@
 					</div>
 					<!-- modal end -->
 				</div>
-				<div id="addEcommerceProjects"></div>		
+				<div id="addEcommerceProjects"></div>
 			</div>
 			<!-- 影楼设计 -->
 			<div class="works-img clearfix" id="studio" hidden>
@@ -644,6 +651,7 @@
 						<!-- modal end -->
 					</div>
 				</div>
+				<div id="addStudioImage"></div>
 			</div>
 			<!-- 影视后期 -->
 			<div class="works-img clearfix" id="premiere" hidden>
@@ -654,8 +662,8 @@
 							<div>
 								<h3>冬瓜作品1</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png" />
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png" />
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere1">
@@ -678,8 +686,8 @@
 							<div>
 								<h3>木易作品4</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere2">
@@ -700,8 +708,8 @@
 							<div>
 								<h3>木易作品5</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere3">
@@ -722,8 +730,8 @@
 							<div>
 								<h3>叶子欧作品1</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere4">
@@ -744,8 +752,8 @@
 							<div>
 								<h3>叶子欧作品2</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere5">
@@ -766,8 +774,8 @@
 							<div>
 								<h3>叶子欧作品3</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere6">
@@ -788,8 +796,8 @@
 							<div>
 								<h3>叶子欧作品4</h3>
 								<div class="designer-img">
-										<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
-									</div>
+									<img class="rounded" src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg">
+								</div>
 							</div>
 						</a>
 						<div class="popup" id="premiere7">
@@ -804,287 +812,288 @@
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
-		<script>$(".works-nav li").click(function () { var a = $(this).index(); $(this).addClass("current").siblings("li").removeClass("current"); $(".works-container .works-img").fadeOut(); $(".works-container .works-img").eq(a).fadeIn() });</script>
-		<script>function pauseVideo() { var a = $("video"); a.each(function () { this.pause() }) }</script>
-		<div class="other-container contain4" id=service>
-			<div class=container>
-				<div class=choose-content>
-					<h2>选择我们有什么优势？</h2>
-					<div class="choose-wrap clearfix">
-						<div class="choose-list col-md-6 col-xs-6">
-							<div class="icon-box fl">
-								<i class="fa fa-handshake-o"></i>
-							</div>
-							<p class=fl>详细的售前咨询
-								<br>完善的售后保障</p>
+	</div>
+	<script>$(".works-nav li").click(function () { var a = $(this).index(); $(this).addClass("current").siblings("li").removeClass("current"); $(".works-container .works-img").fadeOut(); $(".works-container .works-img").eq(a).fadeIn() });</script>
+	<script>function pauseVideo() { var a = $("video"); a.each(function () { this.pause() }) }</script>
+	<div class="other-container contain4" id=service>
+		<div class=container>
+			<div class=choose-content>
+				<h2>选择我们有什么优势？</h2>
+				<div class="choose-wrap clearfix">
+					<div class="choose-list col-md-6 col-xs-6">
+						<div class="icon-box fl">
+							<i class="fa fa-handshake-o"></i>
 						</div>
-						<div class="choose-list col-md-6 col-xs-6">
-							<div class="icon-box fl">
-								<i class="fa fa-edit"></i>
-							</div>
-							<p class=fl>设计风格别致新颖
-								<br>充满青春活力</p>
+						<p class=fl>详细的售前咨询
+							<br>完善的售后保障</p>
+					</div>
+					<div class="choose-list col-md-6 col-xs-6">
+						<div class="icon-box fl">
+							<i class="fa fa-edit"></i>
 						</div>
+						<p class=fl>设计风格别致新颖
+							<br>充满青春活力</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="team-container contain5" id=team>
-			<div class=container>
-				<div class=title-wrap>
-					<h2>设计团队</h2>
-					<p>Design team</p>
+	</div>
+	<div class="team-container contain5" id=team>
+		<div class=container>
+			<div class=title-wrap>
+				<h2>设计团队</h2>
+				<p>Design team</p>
+			</div>
+			<div class=designer-wrap>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src=https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png alt=冬瓜,影楼设计师>
+					</div>
+					<div class=designer-info>
+						<h2>冬瓜</h2>
+						<p>路过的风景，经历过的事，你留下的痕迹，都是我所珍惜的，为每一位客户做最完美的服务。</p>
+					</div>
 				</div>
-				<div class=designer-wrap>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src=https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/donggua.png alt=冬瓜,影楼设计师>
-						</div>
-						<div class=designer-info>
-							<h2>冬瓜</h2>
-							<p>路过的风景，经历过的事，你留下的痕迹，都是我所珍惜的，为每一位客户做最完美的服务。</p>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<a href="https://jiawenzhu.github.io/profile/">
+							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1618117839/profile_img/muyi_eth7ii.jpg" alt=队长,网页设计和项目管理带头人>
+						</a>
+					</div>
+					<div class=designer-info>
+						<h2>队长</h2>
+						<p>网页设计和项目管理带头人，为您提供高质量的全程跟踪以及后续服务。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/youyou.png" alt=幽幽清,团队创始人,平面设计师>
+					</div>
+					<div class=designer-info>
+						<h2>幽幽清</h2>
+						<p>团队创始人，提供高质量的咨询，项目跟踪，售后以及反馈服务</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png" alt=木易,影视文案制作者,影视剪辑师>
+					</div>
+					<div class=designer-info>
+						<h2>木易</h2>
+						<p>深度文案让内涵得以延续，高质量视频让视觉有全新的体验，而为您提供的是二者完美的结合的体验。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<!-- <a href="./team_members/tiehanhan"> -->
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1618117976/profile_img/tiehanhan_u0wpkb.jpg"
+						 alt=铁憨憨呀,网页设计负责人,网页设计>
+						<!-- </a> -->
+					</div>
+					<div class=designer-info>
+						<h2>铁憨憨呀</h2>
+						<p>网页设计负责人，用心为您提供满意的网站页面设计制作服务以及网站建设策划。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/xiahei.jpg" alt=夏黑,平面设计师带头人>
+					</div>
+					<div class=designer-info>
+						<h2>夏黑</h2>
+						<p>平面设计师带头人，为你提供个性话的服务，为你的企业出谋划策</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/nxcveire8fjrwskm7vcc.jpg"
+						 alt=寻忧,平面设计师>
+					</div>
+					<div class=designer-info>
+						<h2>橙汁</h2>
+						<p>平面设计师，勤奋好学，努力为您探索未来无限的可能</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/awmzmjusletxrsqoxywo.jpg"
+						 alt=小风男,网页设计师,UI设计师>
+					</div>
+					<div class=designer-info>
+						<h2>小风男</h2>
+						<p>擅长做网页、UI相关的设计。有做过学校的网站、个人网站、学生助手APP相关界面。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/c4sooqr5m9ujrmbsahci.jpg"
+						 alt=风间仁,电商设计师>
+					</div>
+					<div class=designer-info>
+						<h2>风间仁</h2>
+						<p>图司机签约电商设计师，擅长做不同风格的主图、banner、详情页，有过淘宝C店的电商兼职经历。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg"
+						 alt=叶子欧,平面设计师,影楼设计师>
+					</div>
+					<div class=designer-info>
+						<h2>叶子欧</h2>
+						<p>视觉传达设计专业，擅长平面、影楼，敢想敢做，为您打造不一样的视觉体验。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/mho6ggnvhai0haweik7z.jpg"
+						 alt=开开,影视剪辑师>
+					</div>
+					<div class=designer-info>
+						<h2>开开</h2>
+						<p>热爱剪辑工作，有较强的学习能力和动手能力；工作认真，有良好的团队意识；性格开朗 ，积极上进，肯吃苦耐劳；一直在为热爱而不断努力。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/shi9bqkdiqzc33cavazk.jpg"
+						 alt=雅憨憨,擅长平面、影楼，影视后期方面>
+					</div>
+					<div class=designer-info>
+						<h2>雅憨憨</h2>
+						<p>数字媒体应用技术专业，在团队主要负责宣传工作，擅长平面、影楼，影视后期方面。工作认真，兴趣广泛，积极向上 ，喜欢设计，更爱努力追求，在宣传方面更会坚持不懈。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/kkxzc1du8bjshujlj6iw.jpg"
+						 alt=略略略,电商设计师、UI设计师、人物精修、室内设计>
+					</div>
+					<div class=designer-info>
+						<h2>略略略</h2>
+						<p>比较擅长主要方面是电商和UI，人物精修方面也会一点点，有帮客户修过证件照，写真的经验，大学专业是工程，有一定的房屋图设计基础。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/sbpcyhpwsmn7oxhim4tb.jpg"
+						 alt=泡泡,电商设计师,微商团队美工师>
+					</div>
+					<div class=designer-info>
+						<h2>泡泡</h2>
+						<p>平面设计师，兼职微商团队美工师。擅长电商设计，主要擅长各种微商广告设计，P图，顾客至上，满意为止。</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 designer-list">
+					<div class=designer-img>
+						<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/gvce1a52btwdk3xi6fzo.jpg"
+						 alt=黑桃,影楼设计师>
+					</div>
+					<div class=designer-info>
+						<h2>黑桃</h2>
+						<p>喜欢具有美感的照片，通过自己的修饰，提供给客户完美的品质，为客户提供一流的服务体验</p>
+					</div>
+				</div>
+				<div id="addnewMembers"></div>
+			</div>
+		</div>
+	</div>
+	<div class="other-container wonder-container contain6" id=idea>
+		<div class=container>
+			<div class=other-content>
+				<h2>追求精彩是一种态度</h2>
+				<div class=wonder-wrap>
+					<h3>设计没有止境，创意在这里迸发。</h3>
+					<p>追求品质，推陈出新。</p>
+					<p>服务至上，满意为止！</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class=footer-container>
+		<div class=container>
+			<div class=row>
+				<div class="col-sm-4 row1 clearfix">
+					<h4>鹏U设计工作室</h4>
+					<p>鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。</p>
+					<div class="social-box fl">
+						<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes" rel=nofollow target=_blank>
+							<i class="fa fa-qq"></i>
+						</a>
+						<a href rel=nofollow target=_blank>
+							<i class="fa fa-weibo"></i>
+						</a>
+						<a id=met-weixin>
+							<i class="fa fa-weixin"></i>
+						</a>
+						<div id=met-weixin-content class=hide>
+							<div class=met-weixin-img>
+								<img loading=lazy src=img/qr-img.jpg>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<a href="https://jiawenzhu.github.io/profile/">
-								<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/duizhang.png" alt=队长,网页设计和项目管理带头人>
+				</div>
+				<div class="col-sm-4 row2">
+					<h4>联系方式</h4>
+					<div class=contact-list>
+						<p>
+							<a href=tel:18236130219>
+								<i class="fa fa-phone"></i>
+								<span>18236130219</span>
 							</a>
-						</div>
-						<div class=designer-info>
-							<h2>队长</h2>
-							<p>网页设计和项目管理带头人，为您提供高质量的全程跟踪以及后续服务。</p>
-						</div>
+						</p>
 					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/youyou.png" alt=幽幽清,团队创始人,平面设计师>
-						</div>
-						<div class=designer-info>
-							<h2>幽幽清</h2>
-							<p>团队创始人，提供高质量的咨询，项目跟踪，售后以及反馈服务</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/muyi.png" alt=木易,影视文案制作者,影视剪辑师>
-						</div>
-						<div class=designer-info>
-							<h2>木易</h2>
-							<p>深度文案让内涵得以延续，高质量视频让视觉有全新的体验，而为您提供的是二者完美的结合的体验。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<!-- <a href="./team_members/tiehanhan"> -->
-								<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1618117976/profile_img/tiehanhan_u0wpkb.jpg" alt=铁憨憨呀,网页设计负责人,网页设计>
-							<!-- </a> -->
-						</div>
-						<div class=designer-info>
-							<h2>铁憨憨呀</h2>
-							<p>网页设计负责人，用心为您提供满意的网站页面设计制作服务以及网站建设策划。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/xiahei.jpg" alt=夏黑,平面设计师带头人>
-						</div>
-						<div class=designer-info>
-							<h2>夏黑</h2>
-							<p>平面设计师带头人，为你提供个性话的服务，为你的企业出谋划策</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/nxcveire8fjrwskm7vcc.jpg"
-							 alt=寻忧,平面设计师>
-						</div>
-						<div class=designer-info>
-							<h2>橙汁</h2>
-							<p>平面设计师，勤奋好学，努力为您探索未来无限的可能</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/awmzmjusletxrsqoxywo.jpg"
-							 alt=小风男,网页设计师,UI设计师>
-						</div>
-						<div class=designer-info>
-							<h2>小风男</h2>
-							<p>擅长做网页、UI相关的设计。有做过学校的网站、个人网站、学生助手APP相关界面。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/c4sooqr5m9ujrmbsahci.jpg"
-							 alt=风间仁,电商设计师>
-						</div>
-						<div class=designer-info>
-							<h2>风间仁</h2>
-							<p>图司机签约电商设计师，擅长做不同风格的主图、banner、详情页，有过淘宝C店的电商兼职经历。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/gebywlkzvhn0dene6qpc.jpg"
-							 alt=叶子欧,平面设计师,影楼设计师>
-						</div>
-						<div class=designer-info>
-							<h2>叶子欧</h2>
-							<p>视觉传达设计专业，擅长平面、影楼，敢想敢做，为您打造不一样的视觉体验。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/mho6ggnvhai0haweik7z.jpg"
-							 alt=开开,影视剪辑师>
-						</div>
-						<div class=designer-info>
-							<h2>开开</h2>
-							<p>热爱剪辑工作，有较强的学习能力和动手能力；工作认真，有良好的团队意识；性格开朗 ，积极上进，肯吃苦耐劳；一直在为热爱而不断努力。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980539/profile_img/shi9bqkdiqzc33cavazk.jpg"
-							 alt=雅憨憨,擅长平面、影楼，影视后期方面>
-						</div>
-						<div class=designer-info>
-							<h2>雅憨憨</h2>
-							<p>数字媒体应用技术专业，在团队主要负责宣传工作，擅长平面、影楼，影视后期方面。工作认真，兴趣广泛，积极向上 ，喜欢设计，更爱努力追求，在宣传方面更会坚持不懈。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/kkxzc1du8bjshujlj6iw.jpg"
-							 alt=略略略,电商设计师、UI设计师、人物精修、室内设计>
-						</div>
-						<div class=designer-info>
-							<h2>略略略</h2>
-							<p>比较擅长主要方面是电商和UI，人物精修方面也会一点点，有帮客户修过证件照，写真的经验，大学专业是工程，有一定的房屋图设计基础。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/sbpcyhpwsmn7oxhim4tb.jpg"
-							 alt=泡泡,电商设计师,微商团队美工师>
-						</div>
-						<div class=designer-info>
-							<h2>泡泡</h2>
-							<p>平面设计师，兼职微商团队美工师。擅长电商设计，主要擅长各种微商广告设计，P图，顾客至上，满意为止。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 designer-list">
-						<div class=designer-img>
-							<img loading=lazy src="https://res.cloudinary.com/pengushe-home/image/upload/v1611980538/profile_img/gvce1a52btwdk3xi6fzo.jpg"
-							 alt=黑桃,影楼设计师>
-						</div>
-						<div class=designer-info>
-							<h2>黑桃</h2>
-							<p>喜欢具有美感的照片，通过自己的修饰，提供给客户完美的品质，为客户提供一流的服务体验</p>
-						</div>
-					</div>
-					<div id="addnewMembers"></div>
-				</div>
-			</div>
-		</div>
-		<div class="other-container wonder-container contain6" id=idea>
-			<div class=container>
-				<div class=other-content>
-					<h2>追求精彩是一种态度</h2>
-					<div class=wonder-wrap>
-						<h3>设计没有止境，创意在这里迸发。</h3>
-						<p>追求品质，推陈出新。</p>
-						<p>服务至上，满意为止！</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class=footer-container>
-			<div class=container>
-				<div class=row>
-					<div class="col-sm-4 row1 clearfix">
-						<h4>鹏U设计工作室</h4>
-						<p>鹏U设是以线上设计为主的设计工作室，主要方面有平面、电商、影楼、网页、后期等方面进行工作，拥有强大的团队。</p>
-						<div class="social-box fl">
-							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1608776044&amp;site=qq&amp;menu=yes" rel=nofollow target=_blank>
+					<div class=contact-list>
+						<p>
+							<a href="http://wpa.qq.com/msgrd?v=3&uin=1608776044&site=qq&menu=yes">
 								<i class="fa fa-qq"></i>
+								<span>160876044</span>
 							</a>
-							<a href rel=nofollow target=_blank>
-								<i class="fa fa-weibo"></i>
-							</a>
-							<a id=met-weixin>
-								<i class="fa fa-weixin"></i>
-							</a>
-							<div id=met-weixin-content class=hide>
-								<div class=met-weixin-img>
-									<img loading=lazy src=img/qr-img.jpg>
-								</div>
-							</div>
-						</div>
+						</p>
 					</div>
-					<div class="col-sm-4 row2">
-						<h4>联系方式</h4>
-						<div class=contact-list>
-							<p>
-								<a href=tel:18236130219>
-									<i class="fa fa-phone"></i>
-									<span>18236130219</span>
-								</a>
-							</p>
-						</div>
-						<div class=contact-list>
-							<p>
-								<a href="http://wpa.qq.com/msgrd?v=3&uin=1608776044&site=qq&menu=yes">
-									<i class="fa fa-qq"></i>
-									<span>160876044</span>
-								</a>
-							</p>
-						</div>
-						<div class=contact-list>
-							<p>
-								<a href=weixin://>
-								<i class="fa fa-weixin"></i>
-								<span>yanyand93</span>
-								</a>
-							</p>
-						</div>
-						<div class=contact-list>
-							<p>
-								<a href=mailto:pendushechina@gmail.com>
-									<i class="fa fa-envelope"></i>
-									<span>pendushechina@gmail.com</span>
-								</a>
-							</p>
-						</div>
+					<div class=contact-list>
+						<p>
+							<a href=weixin://>
+							<i class="fa fa-weixin"></i>
+							<span>yanyand93</span>
+							</a>
+						</p>
 					</div>
-					<div class="col-sm-4 row3">
-						<h4>其它社交</h4>
-						<div class=social-box>
-							<div class="col-md-6 col-xs-6">
-								<img loading=lazy src=img/douyin.jpg alt=抖音,短视频社交推广二维码>
-								<p>抖音</p>
-							</div>
-							<div class="col-md-6 col-xs-6">
-								<img loading=lazy src=img/kuaishou.jpg alt=快手,短视频社交推广二维码>
-								<p>快手</p>
-							</div>
+					<div class=contact-list>
+						<p>
+							<a href=mailto:pendushechina@gmail.com>
+								<i class="fa fa-envelope"></i>
+								<span>pendushechina@gmail.com</span>
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4 row3">
+					<h4>其它社交</h4>
+					<div class=social-box>
+						<div class="col-md-6 col-xs-6">
+							<img loading=lazy src=img/douyin.jpg alt=抖音,短视频社交推广二维码>
+							<p>抖音</p>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<img loading=lazy src=img/kuaishou.jpg alt=快手,短视频社交推广二维码>
+							<p>快手</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class=copy>
-			<p>Copyright ©鹏U设计工作室</p>
-		</div>
-		<script type=text/javascript>
+	</div>
+	<div class=copy>
+		<p>Copyright ©鹏U设计工作室</p>
+	</div>
+	<script type=text/javascript>
 		function pagescroll(){var n=$(".contain1").offset().top-180,t=$(".contain2").offset().top-180,s=$(".contain3").offset().top-180,a=$(".contain4").offset().top-180,e=$(".contain5").offset().top-180,o=$(".contain6").offset().top-180;$(window).scroll(function(){var i=$(window).scrollTop();n<i?$(".nav-container").addClass("fixed"):$(".nav").removeClass("fixed"),n<=i&&i<=t?$(".nav li").eq(0).addClass("active").siblings().removeClass("active"):t<=i&&i<s?$(".nav li").eq(1).addClass("active").siblings().removeClass("active"):s<=i&&i<a?$(".nav li").eq(2).addClass("active").siblings().removeClass("active"):a<=i&&i<e?$(".nav li").eq(3).addClass("active").siblings().removeClass("active"):e<=i&&i<o?$(".nav li").eq(4).addClass("active").siblings().removeClass("active"):o<=i&&$(".nav li").eq(5).addClass("active").siblings().removeClass("active")})}function isok(){onOff=!1,$(".nav-xl").toggleClass("nav-xl-m"),$(".nav-xl-ul").slideToggle(300)}function ispcmobile(){768<$(window).width()?$(".nav-container ul").removeClass("nav-xl-ul").show():($(".nav-container ul").addClass("nav-xl-ul").hide(),$(".nav-xl").removeClass("nav-xl-m"))}$(".nav-container a").click(function(){$(this).parents("ul").hasClass("nav-xl-ul")&&($(".nav-xl-ul").slideUp(300),$(".nav-xl").removeClass("nav-xl-m")),$("body,html").animate({scrollTop:$($(this).attr("href")).offset().top-80},300)}),$(".nav-xl").bind("click",function(){isok()}),$(window).scroll(function(){pagescroll()}),ispcmobile(),$(window).resize(function(){ispcmobile()}),$("#met-weixin").bind("click",function(){$("#met-weixin-content").toggle(80)}),$(".popup__fullSize img").click(function(){window.location.href=$(this).attr("src")});var wdt=$(window).width(),str="";375<wdt&&$(".designer-wrap .designer-list").each(function(){var i=$(this).find(".designer-info p").text().length,n=!0,t="";45<i&&n&&(n=!1,t=$(this).find(".designer-info p").html(),str=$(this).find(".designer-info p").text().substring(0,45)+"....<a>更多</a>",$(this).find(".designer-info p").html(str)),$(this).find(".designer-info p a").click(function(){$(this).parent().html(t)})}),wdt<768&&$(".works-container .works-img").each(function(){$(this).children(".workList").each(function(){$(this).find(".popup__fullSize img").each(function(){var i,n,t=$(this);$("<img/>").attr("src",$(t).attr("src")).load(function(){n=this.width,i=this.height,parenheight=$(this).parent().height(),i<=n&&$(t).css({position:"relative",top:"50%",transform:"translateY(-50%)"})})})})});
 		</script>
-		<script type="text/javascript" src="profileData.js"></script>
-		<script type="text/javascript" src="profile.js"></script>
-		<script type="text/javascript" src="dianshang/projectData.js"></script>
-		<script type="text/javascript" src="dianshang/project.js"></script>
-	</body>
+	<script type="text/javascript" src="profileData.js"></script>
+	<script type="text/javascript" src="profile.js"></script>
+	<script type="text/javascript" src="dianshang/projectData.js"></script>
+</body>
+
 </html>
