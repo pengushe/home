@@ -9,8 +9,12 @@
   const authors = data.map(product => product.author);
   const titles = data.map(product => product.title);
   const imagePaths = data.map(product => product.imagePath);
-  console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
+  // console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
 
+  // image_optimization 
+  for (let i = 0; i < imagePaths.length; i++) {
+    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto/');
+  }
   const placeToAdd1 = document.getElementById('addEcommerceProjects');
   const placeToAdd2 = document.getElementById('addPosters');
   const placeToAdd3 = document.getElementById('addLogo');
@@ -20,6 +24,7 @@
   const placeToAdd7 = document.getElementById('addPosters');
   const placeToAdd8 = document.getElementById('addPosters');
 
+  console.log(imagePaths);
   titles.forEach((title, i) => {
     if (title === '电商') {
       imagePaths.filter(function (e, j) {
