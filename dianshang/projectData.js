@@ -30,21 +30,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd1.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j);
         }
       });
     }
@@ -52,21 +38,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd2.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
@@ -74,21 +46,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd3.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
@@ -96,21 +54,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd4.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
@@ -118,89 +62,52 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd5.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
-    else if (title === '产品包装') {
+    else if (title === '产品包装' || title === '包装') {
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd6.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
-    else if (title === '期刊') {
+    else if (title === '期刊' || title === '期刊设计') {
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd7.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j)
         }
       });
     }
-    else if (title === '影楼') {
+    else if (title === '影楼' || title === '影楼设计') {
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd8.innerHTML +=
-            `<div class="workList">
-          <!-- modal start -->
-          <a class="button" href="#${title}${j + 7}">
-            <div class="imgBox">
-              <img loading="lazy" src=${e} alt=${authors[i]}>
-            </div>
-          </a>
-          <div class="popup" id="${title}${j + 7}">
-            <div class="popup-inner">
-              <div class="popup__fullSize">
-                <img loading="lazy" src=${e} alt=${authors[j]}>
-              </div>
-              <a class="popup__close" href="#work">X</a>
-            </div>
-          </div>`
+            placeToAddString(e, j);
         }
       });
+    }
+    function placeToAddString(e, j) {
+      // console.log(('placeToAdd' + (j + 1)).innerHTML = 'hi')
+      return '' +
+        `<div class="workList">
+      <!-- modal start -->
+      <a class="button" href="#${title}${j + 7}">
+        <div class="imgBox">
+          <img loading="lazy" src=${e} alt=${authors[j]}>
+        </div>
+      </a>
+      <div class="popup" id="${title}${j + 7}">
+        <div class="popup-inner">
+          <div class="popup__fullSize">
+            <img loading="lazy" src=${e} alt=${authors[j]}>
+          </div>
+          <a class="popup__close" href="#work">X</a>
+        </div>
+      </div>`
     }
   })
 })();
