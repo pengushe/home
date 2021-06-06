@@ -13,7 +13,7 @@
 
   // image_optimization 
   for (let i = 0; i < imagePaths.length; i++) {
-    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto/');
+    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto:good/');
   }
   const placeToAdd1 = document.getElementById('addEcommerceProjects');
   const placeToAdd2 = document.getElementById('addPosters');
