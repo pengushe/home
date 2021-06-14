@@ -13,7 +13,7 @@
 
   // image_optimization 
   for (let i = 0; i < imagePaths.length; i++) {
-    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto:good/');
+    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto/');
   }
   const placeToAdd1 = document.getElementById('addEcommerceProjects');
   const placeToAdd2 = document.getElementById('addPosters');
@@ -38,7 +38,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd2.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -46,7 +46,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd3.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -54,7 +54,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd4.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -62,7 +62,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd5.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -70,7 +70,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd6.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -78,7 +78,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd7.innerHTML +=
-            placeToAddString(e, j)
+            placeToAddString(e, num)
         }
       });
     }
@@ -86,24 +86,23 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd8.innerHTML +=
-            placeToAddString(e, j);
+            placeToAddString(e, num);
         }
       });
     }
-    function placeToAddString(e, j) {
-      // console.log(('placeToAdd' + (j + 1)).innerHTML = 'hi')
+    function placeToAddString(e, num) {
       return '' +
         `<div class="workList">
       <!-- modal start -->
-      <a class="button" href="#${title}${j + 7}">
+      <a class="button" href="#${title}${num + 7}">
         <div class="imgBox">
-          <img loading="lazy" src=${e} alt=${authors[j]}>
+          <img loading="lazy" src=${e} alt=${authors[num]}>
         </div>
       </a>
-      <div class="popup" id="${title}${j + 7}">
+      <div class="popup" id="${title}${num + 7}">
         <div class="popup-inner">
           <div class="popup__fullSize">
-            <img loading="lazy" src=${e} alt=${authors[j]}>
+            <img loading="lazy" src=${e} alt=${authors[num]}>
           </div>
           <a class="popup__close" href="#work">X</a>
         </div>
