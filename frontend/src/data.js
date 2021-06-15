@@ -1,3 +1,11 @@
+// make it call api from https://pengushe.herokuapp.com/products 
+// use axios to fetch data
+
+// for instance import axios from 'axios'
+// look at productAction.js in action folder
+import axios from 'axios';
+
+// hardcode data below
 const data = [
   {
   _id: "60b25ccc4bf26146a5f5fc0f",
