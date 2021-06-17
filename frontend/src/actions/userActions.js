@@ -63,9 +63,9 @@ export const login = (email, password) => async (dispatch) => {
             type: USER_LOGIN_SUCCESS,
             payload: data
         })
-
         localStorage.setItem('userInfo', JSON.stringify(data))
-
+        localStorage.setItem('userLoginInfoUserName', email)
+        localStorage.setItem('userLoginInfoUserSecret', password)
     } catch (error) {
         dispatch({
             type: USER_LOGIN_FAIL,
@@ -79,6 +79,7 @@ export const login = (email, password) => async (dispatch) => {
 
 export const logout = () => (dispatch) => {
     localStorage.removeItem('userInfo')
+    localStorage.clear()
     dispatch({ type: USER_LOGOUT })
     dispatch({ type: USER_DETAILS_RESET })
     dispatch({ type: ORDER_LIST_MY_RESET })
@@ -97,12 +98,30 @@ export const register = (name, email, password) => async (dispatch) => {
                 'Content-type': 'application/json'
             }
         }
-
-        const { data } = await axios.post(
-            register_api,
-            { 'blocked': false, 'confirmed': true,'username': name, 'email': email, 'password': password, role: 'author'},
-            config
-        )
+        var chatengineHeaders = {
+            headers: {
+                "PRIVATE-KEY": "5883f1a1-f31b-4ed7-bab4-c2e3fe6d9b39"
+            }
+        };
+        // const { data } = await axios.post(
+        //     register_api,
+        //     { 'blocked': false, 'confirmed': true,'username': name, 'email': email, 'password': password, 
+        //     provider:'local', created_by: '60b019b7c198c70015e86c34'},
+        //     config
+        // )
+        const { data } = await axios.all([
+            axios.post(
+                register_api,
+                { 'blocked': false, 'confirmed': true,'username': name, 'email': email, 'password': password, 
+                provider:'local', created_by: '60b019b7c198c70015e86c34'},
+                config
+            ),
+            axios.post(
+                'https://api.chatengine.io/users/',
+                { 'username': email, 'secret': password},
+                chatengineHeaders
+            )
+        ])
 
         dispatch({
             type: USER_REGISTER_SUCCESS,

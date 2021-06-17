@@ -46,6 +46,7 @@ export const listProducts = (keyword = '') => async (dispatch) => {
             type: PRODUCT_LIST_FAIL,
             payload: error.response && error.response.data.detail
                 ? error.response.data.detail
+                
                 : error.message,
         })
     }

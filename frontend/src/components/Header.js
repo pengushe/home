@@ -30,7 +30,7 @@ function Header() {
                         <Nav className="ml-auto">
 
                             <LinkContainer to='/cart'>
-                                <Nav.Link ><i className="fas fa-shopping-cart"></i>Cart</Nav.Link>
+                                <Nav.Link ><i className="fas fa-shopping-cart"></i>接单聊天室</Nav.Link>
                             </LinkContainer>
 
                             {userInfo ? (
@@ -44,7 +44,7 @@ function Header() {
                                 </NavDropdown>
                             ) : (
                                     <LinkContainer to='/login'>
-                                        <Nav.Link><i className="fas fa-user"></i>Login</Nav.Link>
+                                        <Nav.Link><i className="fas fa-user"></i>登陆</Nav.Link>
                                     </LinkContainer>
                                 )}
 
