@@ -38,7 +38,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd2.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -46,7 +46,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd3.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -54,7 +54,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd4.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -62,7 +62,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd5.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -70,7 +70,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd6.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -78,7 +78,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd7.innerHTML +=
-            placeToAddString(e, num)
+            placeToAddString(e, j)
         }
       });
     }
@@ -86,7 +86,7 @@
       imagePaths.filter(function (e, j) {
         if (i === j) {
           return placeToAdd8.innerHTML +=
-            placeToAddString(e, num);
+            placeToAddString(e, j);
         }
       });
     }
