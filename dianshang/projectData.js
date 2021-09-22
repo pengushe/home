@@ -5,7 +5,7 @@
 // const imagePath = '';
 // const productID = 0;
 (async () => {
-  const data = await axios.get('https://pengushe.herokuapp.com/products').then(res => res.data);
+  const data = await axios.get('https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/products_database').then(res => res.data);
   const authors = data.map(product => product.author);
   const titles = data.map(product => product.title);
   const imagePaths = data.map(product => product.imagePath);
