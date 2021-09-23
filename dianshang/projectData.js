@@ -8,7 +8,7 @@
   const data = await axios.get('https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/products_database').then(res => res.data.data);
   const authors = data.map(product => product.author);
   const titles = data.map(product => product.title);
-  const imagePaths = data.map(product => product.imagePath);
+  const imagePaths = data.map(product => product.ImagePath);
   console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
 
   // image_optimization only in cloudinary 
