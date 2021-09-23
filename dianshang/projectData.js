@@ -9,7 +9,7 @@
   const authors = data.map(product => product.author);
   const titles = data.map(product => product.title);
   const imagePaths = data.map(product => product.imagePath);
-  // console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
+  console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
 
   // image_optimization 
   for (let i = 0; i < imagePaths.length; i++) {
