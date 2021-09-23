@@ -31,9 +31,9 @@
   const placeToAdd3 = document.getElementById("addLogo");
   const placeToAdd4 = document.getElementById("addWeb");
   const placeToAdd5 = document.getElementById("addNameCard");
-  const placeToAdd6 = document.getElementById("addPosters");
-  const placeToAdd7 = document.getElementById("addPosters");
-  const placeToAdd8 = document.getElementById("addPosters");
+  const placeToAdd6 = document.getElementById("addPackingImage");
+  const placeToAdd7 = document.getElementById("addPeriodical");
+  const placeToAdd8 = document.getElementById("addStudioImage");
 
   console.log(imagePaths);
   titles.forEach((title, i) => {
