@@ -13,14 +13,6 @@
   const authors = data.map((product) => product.author);
   const titles = data.map((product) => product.title);
   const imagePaths = data.map((product) => product.ImagePath);
-  console.log(
-    "authors: ",
-    authors,
-    "titles: ",
-    titles,
-    "images path: ",
-    imagePaths
-  );
 
   // image_optimization only in cloudinary
   //for (let i = 0; i < imagePaths.length; i++) {
@@ -112,10 +104,45 @@
 (async () => {
   const data = await axios
     .get(
-      "https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/image_database"
+      "https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/video_database"
     )
     .then((res) => res.data.data);
   const authors = data.map((product) => product.author);
-  const titles = data.map((product) => product.title);
-  const imagePaths = data.map((product) => product.ImagePath);
+  const videoPaths = data.map((product) => product.video);
+  const authorImages = data.map((product) => product.authorImage);
+  const types = data.map((product) => product.type);
+
+  const placeToAddVideo = document.getElementById("addVideo");
+
+  videoPaths.forEach((video, index) => {
+    console.log(video.slice(0,-51));
+    return placeToAddVideo.innerHTML += placeToAddString(video, index);
+  });
+  
+  function placeToAddString(video, index) {
+    return (
+      `<div class="col-md-3 col-xs-6 text-center workList">
+        <div class="imgBox">
+          <!-- modal start -->
+          <a class="work" href="#premiere${index + 8}" style="text-decoration: none; background-image: url(img/portfolio-1.jpg)">
+            <div>
+              <h3>${authors[index]}</h3>
+              <div class="designer-img">
+                <img class="rounded" src="${authorImages[index]}">
+              </div>
+            </div>
+          </a>
+          <div class="popup" id="premiere${index + 8}">
+            <div class="popup-inner">
+            <video class="video" controls>
+            <source src="${video}"> Your browser does not support the video tag.
+          </video>
+          <a class="popup__close" href="#work" onclick="pauseVideo()">X</a>
+            </div>
+          </div>
+          <!-- modal end -->
+        </div>
+      </div>`
+    );
+  }
 })();
