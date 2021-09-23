@@ -11,10 +11,10 @@
   const imagePaths = data.map(product => product.imagePath);
   console.log('authors: ', authors, 'titles: ', titles, 'images path: ', imagePaths);
 
-  // image_optimization 
-  for (let i = 0; i < imagePaths.length; i++) {
-    imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto/');
-  }
+  // image_optimization only in cloudinary 
+  //for (let i = 0; i < imagePaths.length; i++) {
+  //  imagePaths[i] = imagePaths[i].replace('upload/', 'upload/q_auto/');
+  //}
   const placeToAdd1 = document.getElementById('addEcommerceProjects');
   const placeToAdd2 = document.getElementById('addPosters');
   const placeToAdd3 = document.getElementById('addLogo');
