@@ -7,6 +7,36 @@
 (async () => {
   const data = await axios
     .get(
+      "https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/avatar"
+    )
+    .then((res) => res.data.data);
+  const names = data.map((product) => product.name);
+  const descriptions = data.map((product) => product.description);
+  const avatars = data.map((product) => product.avatar);
+
+  const placeToAddProfile = document.getElementById("addProfile");
+
+  avatars.forEach((avatar, index) => {
+    return placeToAddProfile.innerHTML += placeToAddString(avatar, index);
+  });
+  
+  function placeToAddString(avatar, index) {
+    return (
+      `	<div class="col-md-3 col-xs-6 designer-list">
+      <div class=designer-img>
+        <img loading=lazy src=${avatar} alt=冬瓜,影楼设计师>
+      </div>
+      <div class=designer-info>
+        <h2>${names[index]}</h2>
+        <p>${descriptions[index]}</p>
+      </div>
+    </div>`
+    );
+  }
+})();
+(async () => {
+  const data = await axios
+    .get(
       "https://myblogexpress-5g5un7us668f0ddc-1306452037.ap-shanghai.service.tcloudbase.com/api/v1.0/image_database"
     )
     .then((res) => res.data.data);
