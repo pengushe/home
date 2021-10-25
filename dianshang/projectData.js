@@ -24,7 +24,7 @@
     return (
       `	<div class="col-md-3 col-xs-6 designer-list">
       <div class=designer-img>
-        <img loading=lazy src=${avatar} alt=冬瓜,影楼设计师>
+        <img loading=lazy src=${avatar} alt=avatar>
       </div>
       <div class=designer-info>
         <h2>${names[index]}</h2>
